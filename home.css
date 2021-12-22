@@ -76,6 +76,41 @@ footer{
 .pad-top{
   padding-top: 4rem;
 }
+.pad-btm{
+  padding-bottom: 4rem;
+}
 .blue-clr {
   color: #24cdd5;
+}
+
+.li-inline-cs{
+  
+  display: flex;
+  justify-content: space-evenly;
+}
+.li-inline-cs a{
+  color: #26313c;
+}
+.mar-23{
+  margin: 0 23%;
+}
+
+.bg-blog{
+  background-color: #f6f7f8;
+}
+.bottom10{
+  padding-bottom: 10px;
+}
+.mar-top-2{
+  margin-top: 1.5rem;
+}
+.bodycontainerbg{
+  background-color: #fff;
+}
+.bodycontainer {
+  width: 100%;
+  height: 0vh;
+  transform: translate(0, -100px);
+  contain: "";
+  background-color: transparent;
 }
