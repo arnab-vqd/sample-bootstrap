@@ -12,388 +12,925 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <!-- css page  -->
   <link rel="stylesheet" href="./home.css" />
- 
+
 </head>
 
-<body >
+<body>
 
 
   <!-- header -->
   <header class="header " id='headedrid'>
-        <div class="collapse mySidebar" id="navbarToggleExternalContent">
-          <div class="bg-dark p-4">
-            <ul class="navbar-nav mx-auto ms-xl-auto  li-inline">
-              <li class="nav-item">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link   active" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link     " href="#" >About Us</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link  " href="#">Our Pricing</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link  " href="#">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link  " href="#">Our Blog</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link  " href="#">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <nav class="navbar navbar-dark bg-dark  fixed-top" >
-          <h2><a class='logocls'>trax.</a></h2>
-              <ul class=" mx-auto ms-xl-auto  li-inline">
-                  <li class="nav-item">
-                      <a class="nav-link   active" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link     " href="#" >About Us</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link  " href="#">Our Pricing</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link  " href="#">Portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link  " href="#">Our Blog</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link  " href="#">Contact Us</a>
-                  </li>
-              </ul>
-            <button class="navbar-toggler" type="button" onclick="openNav()" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-        </nav>
-   
+    <div class="collapse mySidebar" id="navbarToggleExternalContent">
+      <div class="bg-dark main p-4">
+        <ul class="navbar-nav  li-inline">
+          <li class="nav-item">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link   active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link     " href="#aboutus">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  " href="#pricing">Our Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  " href="#Portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  " href="#blog">Our Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  " href="#contactus">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <nav class="navbar fixed-top" id="nav-header">
+      <h2 class='logocls'><a>trax.</a></h2>
+      <ul class=" ml-20 white-clr  li-inline">
+        <li class="nav-item">
+          <a class="nav-link   " href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#aboutus">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  " href="#pricing">Our Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  " href="#Portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  " href="#blog">Our Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  " href="#contactus">Contact Us</a>
+        </li>
+      </ul>
+      <button class="navbar-toggler" type="button" onclick="openNav()" data-toggle="collapse"
+        data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class=" white-clr"><i class="fa fa-bars"></i></span>
+      </button>
+
+    </nav>
+
   </header>
   <!-- header -->
 
   <!-- main section  -->
-  <section>
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ul class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"> 1</li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1">2 </li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2">3</li>
-    </ul>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="container-fluid">
-          <div class="bannar">
-            <div class="banner-txt typewriter">
-              <h1 class="fnt-300">Let's Create</h1>
-              <h1>Deep Creativity</h1>
-              <h1 class="fnt-300">In Market</h3>
-              <h4 style="margin-bottom: 50px">Responsive and Retina Ready for All Devices</h4>
-            </div>  
+  <section id="home">
+    <div id="carouselExampleIndicators " class="carousel slide" data-ride="carousel">
+      <!-- <ul class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"> </li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"> </li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ul> -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container-fluid">
+            <div class="bannar">
+              <div class="banner-txt typewriter">
+                <h1 class="fnt-300">Let's Create</h1>
+                <h1>Deep Creativity</h1>
+                <h1 class="fnt-300">In Market</h3>
+                  <h4 style="margin-bottom: 50px">Responsive and Retina Ready for All Devices</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container-fluid">
+            <div class="bannar">
+              <div class="banner-txt typewriter">
+                <h1 class="fnt-300">Let's Create</h1>
+                <h1>Deep Creativity</h1>
+                <h1 class="fnt-300">In Market</h3>
+                  <h4 style="margin-bottom: 50px">Responsive and Retina Ready for All Devices</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container-fluid">
+            <div class="bannar">
+              <div class="banner-txt typewriter">
+                <h1 class="fnt-300">Let's Create</h1>
+                <h1>Deep Creativity</h1>
+                <h1 class="fnt-300">In Market</h3>
+                  <h4 style="margin-bottom: 50px">Responsive and Retina Ready for All Devices</h4>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <div class="container-fluid">
-          <div class="bannar">
-            <div class="banner-txt typewriter">
-              <h1 class="fnt-300">Let's Create</h1>
-              <h1>Deep Creativity</h1>
-              <h1 class="fnt-300">In Market</h3>
-              <h4 style="margin-bottom: 50px">Responsive and Retina Ready for All Devices</h4>
-            </div>  
+
+    </div>
+
+    <!-- main section  -->
+    <!-- service card  -->
+    <div class="container ">
+      <div class="row bodycontainer">
+
+        <div class="col-md-4">
+          <div class="card card-box bg-globe">
+            <span class="text-center "><i class="fa fa-globe fa-2x"></i></span>
+
+            <div class="card-body  text-center ">
+
+              <h4 class="a-link"><a href="#">SEO Optimized</a></h4>
+              <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-box  text-center  bg-clipboard">
+            <span class="text-center "><i class="fa fa-clipboard fa-2x"></i></span>
+
+            <div class="card-body">
+
+              <h4 class="a-link"><a href="#">Well Documented</a></h4>
+              <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-box text-center bg-laptop">
+            <span class="a-link"><i class="fa fa-laptop fa-2x"></i></span>
+
+            <div class="card-body ">
+
+              <h4 class="a-link"><a href="#">Fully Responsive</a></h4>
+              <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- service card  -->
+  <!-- business next level -->
+  <section id="aboutus">
+    <div class="container mt-20">
+      <div class="row d-flex align-items-center">
+        <div class=" col-md-7  ">
+          <div class=" mb-4">
+            <h1 class=" ">Lets take your</h1>
+            <h1> <span class="blue-clr">Business</span> to Next
+              Level</h1>
+          </div>
+          <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris arcu, lobortis id
+            interdum vitae, interdum eget elit. Curabitur quis urna nulla. Suspendisse potenti. Duis suscipit ultrices
+            maximus. </p>
+          <a href="#" class="button  btn btn-primary">Learn More</a>
+        </div>
+        <div class="col-md-5 ">
+          <div class="image "><img alt="SEO" src="./img/teaimg.png"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- business next level -->
+
+    <!-- progressbar  -->
+    <section class="pt-20 dark-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center white-clr">
+            <div class="">
+              <span>Quisque tellus risus, adipisci </span>
+              <h2 class="font-normal pb-4">Our Work Process </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <ul class=" white-clr li-inline-cs ">
+            <li>
+              <span class="circle">01</span>
+              <p class="pt-5">Concept</p>
+              <p>Quisque tellus risus, adipisci viverra bibendum urna.</p>
+            </li>
+            <li>
+              <span class="circle">02</span>
+              <p class="pt-5">Plan</p>
+              <p>Quisque tellus risus, adipisci viverra bibendum urna.</p>
+            </li>
+            <li>
+              <span class="circle">03</span>
+              <p class="pt-5">Design</p>
+              <p>Quisque tellus risus, adipisci viverra bibendum urna.</p>
+            </li>
+            <li>
+              <span class="circle">04</span>
+              <p class="pt-5">Development</p>
+              <p>Quisque tellus risus, adipisci viverra bibendum urna.</p>
+            </li>
+            <li>
+              <span class="circle">05</span>
+              <p class="pt-5">Quality Check</p>
+              <p>Quisque tellus risus, adipisci viverra bibendum urna.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- progressbar -->
+    <!-- mobile app section  -->
+    <section class="pt-20 ">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div>
+              <span class="blue-clr ">Quisque tellus risus, adipisci viverra</span>
+              <h2 class=" font-normal  ">Mobile App Designs</h2>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class=" ">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit.
+              Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus.
+            </p>
+          </div>
+        </div>
+        <div class="pt-20">
+          <div class="row">
+            <div class="col-md-4 pt-12 text-right">
+              <div class=" ">
+
+                <div class="icon"><i class="fa fa-cog fa-2x blue-clr"></i></div>
+                <div class="text">
+                  <h3 class="bottom15">
+                    <span class="">Theme Options</span>
+                  </h3>
+                  <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+
+                </div>
+              </div>
+              <div class=" ">
+
+                <div class="icon"><i class="fa fa-edit fa-2x blue-clr"></i></div>
+                <div class="text">
+                  <h3 class="bottom15">
+                    <span class="">Customization</span>
+                  </h3>
+                  <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="./img/iphone.png" class=" " alt="">
+            </div>
+            <div class="col-md-4 pt-12">
+              <div class=" ">
+
+                <div class="icon"><i class="fa fa-code fa-2x blue-clr"></i></div>
+                <div class="text">
+                  <h3 class="bottom15">
+                    <span class="">Powerful Code</span>
+                  </h3>
+                  <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+
+                </div>
+              </div>
+              <div class=" ">
+
+                <div class="icon"><i class="fa fa-folder-open fa-2x blue-clr"></i></div>
+                <div class="text">
+                  <h3 class="bottom15">
+                    <span class="">Documentation </span>
+                  </h3>
+                  <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <div class="container-fluid">
-          <div class="bannar">
-            <div class="banner-txt typewriter">
-              <h1 class="fnt-300">Let's Create</h1>
-              <h1>Deep Creativity</h1>
-              <h1 class="fnt-300">In Market</h3>
-              <h4 style="margin-bottom: 50px">Responsive and Retina Ready for All Devices</h4>
-            </div>  
+    </section>
+
+
+    <!-- mobile app section  -->
+
+    <!-- counters seens -->
+    <section id="bg-counters" class="pt-20"
+      style="background-image: url(&quot;https://trax.acrothemes.com/bootstrap-v5/images/counter-bg.jpg&quot;); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center ;">
+      <div class="container">
+        <div class="row align-items-center text-center white-clr">
+          <div class="col-md-4  bottom10">
+            <div class="bottom10">
+              <span class="" data-to="2010" data-speed="2500">2010</span>
+            </div>
+            <h3 class="">Since We Started</h3>
+          </div>
+          <div class="col-md-4">
+            <p class="bottom20 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris arcu, lobortis id
+              interdum vitae, interdum eget elit. </p>
+          </div>
+          <div class="col-md-4  bottom10">
+            <div class="   bottom10">
+              <span class="" data-to="895" data-speed="2500">895</span>
+            </div>
+            <h3 class=" ">Since We Started</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- counters seens -->
+    <!-- exparts  -->
+
+    <section class="  pt-12">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div>
+              <span class="blue-clr ">Quisque tellus risus, adipisci</span>
+              <h2 class=" font-normal  ">Meet Our Experts</h2>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class=" ">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit.
+              Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus.
+            </p>
+          </div>
+        </div>
+        <div class="row " style=" transform: translate(0,30%);">
+          <div class="col-md-3 text-center ">
+            <div>
+              <div class="card">
+                <a href="#"><img class="card-img-top" width="350" height="200" src="./img/expart1.jpg"
+                    alt="Card image cap"></a>
+                <div class="card-body ht-130">
+
+                  <div class="team-content">
+                    <h4 class="darkcolor">Jessica Twain</h4>
+                    <p>Agency Owner</p>
+                    <ul class="social-icons-simple li-inline-cs">
+                      <li><a class="facebook" href="javascript:void(0)"><i class="fa fa-facebook-f"></i> </a> </li>
+                      <li><a class="twitter" href="javascript:void(0)"><i class="fa fa-twitter"></i> </a> </li>
+                      <li><a class="insta" href="javascript:void(0)"><i class="fa fa-instagram"></i> </a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 text-center ">
+            <div>
+              <div class="card">
+                <a href="#"><img class="card-img-top" width="350" height="200" src="./img/expart1.jpg"
+                    alt="Card image cap"></a>
+                <div class="card-body ht-130">
+
+                  <div class="team-content">
+                    <h4 class="darkcolor">Jessica Twain</h4>
+                    <p>Agency Owner</p>
+                    <ul class="social-icons-simple li-inline-cs">
+                      <li><a class="facebook" href="javascript:void(0)"><i class="fa fa-facebook-f"></i> </a> </li>
+                      <li><a class="twitter" href="javascript:void(0)"><i class="fa fa-twitter"></i> </a> </li>
+                      <li><a class="insta" href="javascript:void(0)"><i class="fa fa-instagram"></i> </a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 text-center ">
+            <div>
+              <div class="card">
+                <a href="#"><img class="card-img-top" width="350" height="200" src="./img/expart1.jpg"
+                    alt="Card image cap"></a>
+                <div class="card-body ht-130">
+
+                  <div class="team-content">
+                    <h4 class="darkcolor">Jessica Twain</h4>
+                    <p>Agency Owner</p>
+                    <ul class="social-icons-simple li-inline-cs">
+                      <li><a class="facebook" href="javascript:void(0)"><i class="fa fa-facebook-f"></i> </a> </li>
+                      <li><a class="twitter" href="javascript:void(0)"><i class="fa fa-twitter"></i> </a> </li>
+                      <li><a class="insta" href="javascript:void(0)"><i class="fa fa-instagram"></i> </a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 text-center  ">
+            <div>
+              <div class="card">
+                <a href="#"><img class="card-img-top" width="350" height="200" src="./img/expart1.jpg"
+                    alt="Card image cap"></a>
+                <div class="card-body ht-130">
+
+                  <div class="team-content">
+                    <h4 class="darkcolor">Jessica Twain</h4>
+                    <p>Agency Owner</p>
+                    <ul class="social-icons-simple li-inline-cs">
+                      <li><a class="facebook" href="javascript:void(0)"><i class="fa fa-facebook-f"></i> </a> </li>
+                      <li><a class="twitter" href="javascript:void(0)"><i class="fa fa-twitter"></i> </a> </li>
+                      <li><a class="insta" href="javascript:void(0)"><i class="fa fa-instagram"></i> </a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+  <!-- exparts  -->
+
+  <!-- offers  -->
+  <section id="pricing" class="  pt-20 bg-blog ">
+    <div class="container">
+      <div class="row pt-12">
+        <div class="col-md-12 text-center">
+          <span class="blue-clr ">Quisque tellus risus, adipisci </span>
+          <h2 class="font-normal"> Pricing Offers </h2>
+        </div>
+        <div class="col-md-12 text-center">
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-primary active">
+              <input type="button" class="button  btn btn-primary" name="options" id="option1" autocomplete="off"
+                checked> Monthly
+            </label>
+            <label class="btn btn-primary">
+              <input type="button" clas="button  btn btn-primary" name="options" id="option2" autocomplete="off"> Yearly
+            </label>
+
+          </div>
+        </div>
+      </div>
+      <div class="row pt-12">
+        <div class="col-md-4">
+          <div class="card ">
+            <div class="card-body text-center ">
+              <div>
+                <h3 class=" ">Basic</h3>
+                <p class="">The standard version</p>
+                <hr>
+                <div class=""><span class="">$9.95</span> /<span class="">month</span></div>
+                <hr>
+                <ul class="">
+                  <li>Support forum</li>
+                  <li>Free hosting</li>
+                  <li class="price-not">40MB of storage space</li>
+                  <li class="price-not">Social media integration</li>
+                  <li class="price-not">10GB of storage space</li>
+                </ul>
+                <a class="button  btn btn-primary" href="#">Choose plan</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card ">
+            <div class="card-body text-center bg-dark white-clr">
+              <div>
+                <h3 class=" ">Basic</h3>
+                <p class="">The standard version</p>
+                <hr>
+                <div class=""><span class="">$9.95</span> /<span class="">month</span></div>
+                <hr>
+                <ul class="">
+                  <li>Support forum</li>
+                  <li>Free hosting</li>
+                  <li class="price-not">40MB of storage space</li>
+                  <li class="price-not">Social media integration</li>
+                  <li class="price-not">10GB of storage space</li>
+                </ul>
+                <a class="button  btn btn-primary" href="#">Choose plan</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card ">
+            <div class="card-body text-center ">
+              <div>
+                <h3 class=" ">Basic</h3>
+                <p class="">The standard version</p>
+                <hr>
+                <div class=""><span class="">$9.95</span> /<span class="">month</span></div>
+                <hr>
+                <ul class="">
+                  <li>Support forum</li>
+                  <li>Free hosting</li>
+                  <li class="price-not">40MB of storage space</li>
+                  <li class="price-not">Social media integration</li>
+                  <li class="price-not">10GB of storage space</li>
+                </ul>
+                <a class="button  btn btn-primary" href="#">Choose plan</a>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
     </div>
-    
-  </div>
-</section>
-  <!-- main section  -->
-<!-- blog section -->
-<section class=" bg-blog  pad-top pad-btm" id="blog">
-  <div class="container">
-      <div class="row">
-          <div class="col-md-12 text-center">
-                <div>
-                  <span class="blue-clr">Read Out Our</span>
-                  <h2 > Latest Blog </h2>
-                  <p class="mar-23 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolores omnis provident quam reiciendis voluptatum.</p>
-
-                </div>
+  </section>
+  <!-- offers  -->
+  <!-- Portfolio -->
+  <section id="Portfolio">
+    <div class="container">
+      <div class="row pt-12">
+        <div class="col-md-12 text-center">
+          <span class="blue-clr "> Let's Explore Out </span>
+          <h2 class="font-normal">Our Portfolio </h2>
+          <p class="mar-23 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolores omnis provident quam
+            reiciendis voluptatum.</p>
+        </div>
+        <div class="col-md-12">
+          <div class="d-flex justify-content-center">
+            <div data-filter="*" class="">
+              <span>All</span>
+            </div>
+            <div data-filter=".digital" class=" filter-item">
+              <span>Digital</span>
+            </div>
+            <div data-filter=".design" class=" filter-item">
+              <span>Design</span>
+            </div>
+            <div data-filter=".brand" class=" filter-item">
+              <span>Brand</span>
+            </div>
+            <div data-filter=".graphics" class=" filter-item">
+              <span>Graphics</span>
+            </div>
           </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <img src="./img/gallery-5.jpg" style="width:100%">
+        </div>
+        <div class="col-md-2">
+          <img src="./img/gallery-5.jpg" style="width:100%">
+        </div>
+        <div class="col-md-2">
+          <img src="./img/gallery-5.jpg" style="width:100%">
+        </div>
+        <div class="col-md-2">
+          <img src="./img/gallery-5.jpg" style="width:100%">
+        </div>
+        <div class="col-md-2">
+          <img src="./img/gallery-5.jpg" style="width:100%">
+        </div>
+        <div class="col-md-2">
+          <img src="./img/gallery-5.jpg" style="width:100%">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <img src="./img/gallery-5.jpg" style="width:100%">
+        </div>
+        <div class="col-md-2">
+          <img src="./img/gallery-5.jpg" style="width:100%">
+        </div>
+        <div class="col-md-2">
+          <img src="./img/gallery-5.jpg" style="width:100%">
+        </div>
+        <div class="col-md-2">
+          <img src="./img/gallery-5.jpg" style="width:100%">
+        </div>
+        <div class="col-md-2">
+          <img src="./img/gallery-5.jpg" style="width:100%">
+        </div>
+        <div class="col-md-2">
+          <img src="./img/gallery-5.jpg" style="width:100%">
+        </div>
+      </div>
+    </div>
+    <!-- people say -->
+    <section class="pt-20"
+      style="background-image: url(./img/people-say.jpg) ;background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center ;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6"></div>
+          <div class="col-md-6 text-right white-clr">
+            <span class="justify-content-end "> Quisque tellus risus, adipisci </span>
+            <h2 class="font-normal"> What People Say </h2>
+          </div>
+        </div>
+      </div>
+
+    </section class="">
+    <div class="container">
+      <div class="row ">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+          <p>Trax’s customer testimonial page is another beauty. Its simple design focuses on videos and standout
+            quotes from customers. This approach is clean, straightforward, text that can be overwhelming and easy to
+            skip.</p>
+          <span class="d-inline-block test-star">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+    <section>
+
+    </section>
+    <!-- people say -->
+
+  </section>
+  <!-- Portfolio -->
+
+  <!-- blog section -->
+  <section id="blog" class=" bg-blog  pad-top pad-btm" id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div>
+            <span class="blue-clr">Read Out Our</span>
+            <h2> Latest Blog </h2>
+            <p class="mar-23 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolores omnis provident quam
+              reiciendis voluptatum.</p>
+
+          </div>
+        </div>
       </div>
 
       <div class="row">
         <div class="col-md-4 text-center pad-top">
-              <div>
-                <div class="card" >
-                  <a href="#"><img class="card-img-top"  width="350" height="200" src="./img/blog-1.webp" alt="Card image cap"></a>
-                  <div class="card-body">
-                   
-                      <h3 class="text-capitalize  blue-clr"><a href="#">Next Large Social Network</a></h3>
-                      <ul class="li-inline-cs ">
-                          <li><a href="#" class="text-secondary"><i class="fa fa-calendar"></i>Jan 14</a></li>
-                          <li><a href="#" class="text-secondary"> <i class="fa fa-user"></i>Peter</a></li>
-                          <li><a href="#" class="text-secondary"><i class="fa fa-comment"></i>7</a></li>
-                      </ul>
-                     
-                 
-                    <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                </div>
+          <div>
+            <div class="card">
+              <a href="#"><img class="card-img-top" width="350" height="200" src="./img/blog-1.jpg"
+                  alt="Card image cap"></a>
+              <div class="card-body">
+
+                <h3 class="text-capitalize  blue-clr"><a href="#">Next Large Social Network</a></h3>
+                <ul class="li-inline-cs ">
+                  <li><a href="#" class="text-secondary"><i class="fa fa-calendar"></i>Jan 14</a></li>
+                  <li><a href="#" class="text-secondary"> <i class="fa fa-user"></i>Peter</a></li>
+                  <li><a href="#" class="text-secondary"><i class="fa fa-comment"></i>7</a></li>
+                </ul>
+
+
+                <p class="card-text text-secondary">Some quick example text to build on the card title and make up the
+                  bulk of the card's content.</p>
               </div>
+            </div>
+          </div>
         </div>
         <div class="col-md-4 text-center pad-top">
           <div>
-            <div class="card" >
-              <a href="#"><img class="card-img-top" src="./img/blog-1.webp"   width="350" height="200" alt="Card image cap"></a>
+            <div class="card">
+              <a href="#"><img class="card-img-top" src="./img/blog-1.jpg" width="350" height="200"
+                  alt="Card image cap"></a>
               <div class="card-body">
-               
-                  <h3 class="text-capitalize  blue-clr"><a href="#">Next Large Social Network</a></h3>
-                  <ul class="li-inline-cs">
-                      <li><a href="#" class="text-secondary"><i class="fa fa-calendar"></i>Jan 14</a></li>
-                      <li><a href="#" class="text-secondary"> <i class="fa fa-user"></i>Peter</a></li>
-                      <li><a href="#" class="text-secondary"><i class="fa fa-comment"></i>7</a></li>
-                  </ul>
-                 
-             
-                <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                <h3 class="text-capitalize  blue-clr"><a href="#">Next Large Social Network</a></h3>
+                <ul class="li-inline-cs">
+                  <li><a href="#" class="text-secondary"><i class="fa fa-calendar"></i>Jan 14</a></li>
+                  <li><a href="#" class="text-secondary"> <i class="fa fa-user"></i>Peter</a></li>
+                  <li><a href="#" class="text-secondary"><i class="fa fa-comment"></i>7</a></li>
+                </ul>
+
+
+                <p class="card-text text-secondary">Some quick example text to build on the card title and make up the
+                  bulk of the card's content.</p>
               </div>
             </div>
           </div>
-    </div>
-    <div class="col-md-4 text-center pad-top">
-      <div>
-        <div class="card" >
-          <video width="350" height="200" controls>
-            <source src="https://youtu.be/iFUFFUb5W4w" type="video/mp4">
-            <source src="https://youtu.be/iFUFFUb5W4w" type="video/ogg">
-          Your browser does not support the video tag.
-          </video>
-          <div class="card-body">
-           
-              <h3 class="text-capitalize  blue-clr"><a href="#">Next Large Social Network</a></h3>
-              <ul class="li-inline-cs">
-                  <li><a href="#"class="text-secondary"><i class="fa fa-calendar"></i>Jan 14</a></li>
-                  <li><a href="#"class="text-secondary"> <i class="fa fa-user"></i>Peter</a></li>
-                  <li><a href="#"class="text-secondary"><i class="fa fa-comment"></i>7</a></li>
-              </ul>
-             
-         
-            <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <div class="col-md-4 text-center pad-top">
+          <div>
+            <div class="card">
+              <video width="350" height="200" controls>
+                <source src="https://youtu.be/iFUFFUb5W4w" type="video/mp4">
+                <source src="https://youtu.be/iFUFFUb5W4w" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+              <div class="card-body">
+
+                <h3 class="text-capitalize  blue-clr"><a href="#">Next Large Social Network</a></h3>
+                <ul class="li-inline-cs">
+                  <li><a href="#" class="text-secondary"><i class="fa fa-calendar"></i>Jan 14</a></li>
+                  <li><a href="#" class="text-secondary"> <i class="fa fa-user"></i>Peter</a></li>
+                  <li><a href="#" class="text-secondary"><i class="fa fa-comment"></i>7</a></li>
+                </ul>
+
+
+                <p class="card-text text-secondary">Some quick example text to build on the card title and make up the
+                  bulk of the card's content.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-</div>
+
     </div>
-     
-  </div>
-</section>
-<!-- blog section  -->
+  </section>
+  <!-- blog section  -->
 
-<!-- contact section  -->
-<section >
-  <div class="container pad-top">
-      <div >
-          <div class="row">
-              <div class="col-md-12 text-center ">
-                  <span class="blue-clr">Quisque tellus risus</span>
-                  <div>
-                      <h2 > Contact Us </h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolores omnis provident quam reiciendis voluptatum.</p>
+  <!-- contact section  -->
+  <section id="contactus">
+    <div class="container pad-top">
+      <div>
+        <div class="row">
+          <div class="col-md-12 text-center ">
+            <span class="blue-clr">Quisque tellus risus</span>
+            <div>
+              <h2> Contact Us </h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolores omnis provident quam reiciendis
+                voluptatum.</p>
 
-                  </div>
-                  
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <div >
-                    <form class="getin_form" onsubmit="return false;">
-                        <div class="row px-2">
-                            <div class="col-md-12 col-sm-12" id="result1"></div>
-                            <div class="col-md-12 col-sm-12">
-                                <div class="form-group">
-                                    <label for="name1"  ></label>
-                                    <input class="form-control" id="name1" type="text" placeholder="Name" required="" name="userName">
-                                </div>
-                            </div>
-                            <div class="col-md-12 col-sm-12">
-                                <div class="form-group">
-                                    <label for="email1"  ></label>
-                                    <input class="form-control" type="email" id="email1" placeholder="Email" name="email">
-                                </div>
-                            </div>
-                            <div class="col-md-12 col-sm-12">
-                                <div class="form-group">
-                                    <label for="message1"  ></label>
-                                    <textarea class="form-control" id="message1" placeholder="Message" required="" name="message"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-md-12 col-sm-12">
-                                <button type="submit" id="submit_btn1" class="button btn btn-primary w-100">Send</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
             </div>
-              <div class="col-md-6 col-sm-12 order-md-2 text-center ">
-                  <div  >
-                      <div class="heading-title heading_small">
-                          <span class="blue-clr ">Trax Agency Worldwide</span>
-                          <h3 class="blue-clr ">Our London Agency</h3>
-                      </div>
-                      <div class="my-3">
-                          <p class="bottom10">Address: 309, New Cavendish St, EC1Y 3WK</p>
-                          <p class="bottom10">0800 214 5252</p>
-                          <p class="bottom10">0400 20778972</p>
-                          <p class="bottom10"><a href="mailto:polpo@traxagency.co.au">polpo@traxagency.com</a></p>
-                          <p class="bottom10">Mon-Fri: 9am-5pm</p>
-                      </div>
-                      <ul class="li-inline-cs" >
-                          <li><a href="#" class="facebook"><i class="fa fa-facebook-square"></i> </a> </li>
-                          <li><a href="#" class="twitter"><i class="fa fa-twitter"></i> </a> </li>
-                          <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i> </a> </li>
-                          <li><a href="#" class="insta"><i class="fa fa-instagram"></i> </a> </li>
-                          <li><a href="#" class="whatsapp"><i class="fa fa-whatsapp"></i> </a> </li>
-                          <li><a href="#"  class="envelop"><i class="fa fa-envelope"></i> </a> </li>
-                      </ul>
-                  </div>
-              </div>
-              
+
           </div>
+          <div class="col-md-6 col-sm-12">
+            <div>
+              <form class="getin_form" onsubmit="return false;">
+                <div class="row px-2">
+                  <div class="col-md-12 col-sm-12" id="result1"></div>
+                  <div class="col-md-12 col-sm-12">
+                    <div class="form-group">
+                      <label for="name1"></label>
+                      <input class="form-control" id="name1" type="text" placeholder="Name" required="" name="userName">
+                    </div>
+                  </div>
+                  <div class="col-md-12 col-sm-12">
+                    <div class="form-group">
+                      <label for="email1"></label>
+                      <input class="form-control" type="email" id="email1" placeholder="Email" name="email">
+                    </div>
+                  </div>
+                  <div class="col-md-12 col-sm-12">
+                    <div class="form-group">
+                      <label for="message1"></label>
+                      <textarea class="form-control" id="message1" placeholder="Message" required=""
+                        name="message"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-12 col-sm-12">
+                    <button type="submit" id="submit_btn1" class="button btn btn-primary w-100">Send</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 order-md-2 text-center ">
+            <div>
+              <div class="heading-title heading_small">
+                <span class="blue-clr ">Trax Agency Worldwide</span>
+                <h3 class="blue-clr ">Our London Agency</h3>
+              </div>
+              <div class="my-3">
+                <p class="bottom10">Address: 309, New Cavendish St, EC1Y 3WK</p>
+                <p class="bottom10">0800 214 5252</p>
+                <p class="bottom10">0400 20778972</p>
+                <p class="bottom10"><a href="mailto:polpo@traxagency.co.au">polpo@traxagency.com</a></p>
+                <p class="bottom10">Mon-Fri: 9am-5pm</p>
+              </div>
+              <ul class="li-inline-cs">
+                <li><a href="#" class="facebook"><i class="fa fa-facebook-square"></i> </a> </li>
+                <li><a href="#" class="twitter"><i class="fa fa-twitter"></i> </a> </li>
+                <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i> </a> </li>
+                <li><a href="#" class="insta"><i class="fa fa-instagram"></i> </a> </li>
+                <li><a href="#" class="whatsapp"><i class="fa fa-whatsapp"></i> </a> </li>
+                <li><a href="#" class="envelop"><i class="fa fa-envelope"></i> </a> </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
       </div>
-  </div>
-</section>
-<!-- contact section  -->
-<!-- map section  -->
- 
-  <section >
+    </div>
+  </section>
+  <!-- contact section  -->
+  <!-- map section  -->
+
+  <section>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.541095417225!2d88.12877561432335!3d25.0157048451801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fafdb4940bffd9%3A0x7029c0aa6686970b!2sMalda%20Town!5e0!3m2!1sen!2sin!4v1607516954115!5m2!1sen!2sin"
       width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
       tabindex="0"></iframe>
   </section>
- 
-<!-- map section  -->
 
-<!-- stay connected section  -->
-<section id="stayconnect">
-  <div class="container position-relative">
+  <!-- map section  -->
+
+  <!-- stay connected section  -->
+  <section id="stayconnect">
+    <div class="container position-relative">
       <div class="bodycontainer">
-          <div class="row bodycontainerbg">
-              <div class="col-md-12 col-sm-12">
-                  
-                      <h3 >Stay Connected</h3>
-                  
-              </div>
-              <div class="col-md-12 col-sm-12">
-                  <form  >
-                      <div class="row">
-                          <div class="col-md-12 col-sm-12" id="result"></div>
-                          <div class="col-md-3 col-sm-6">
-                              <div class="form-group">
-                                  <label for="userName"  ></label>
-                                  <input class="form-control" type="text" placeholder="Name" required="" id="userName" name="userName">
-                              </div>
-                          </div>
-                          <div class="col-md-3 col-sm-6">
-                              <div class="form-group">
-                                  <label for="companyName"  ></label>
-                                  <input class="form-control" type="text" placeholder="Company" id="companyName" name="companyName">
-                              </div>
-                          </div>
-                          <div class="col-md-3 col-sm-6">
-                              <div class="form-group">
-                                  <label for="email"  ></label>
-                                  <input class="form-control" type="email" placeholder="Email" required="" id="email" name="email">
-                              </div>
-                          </div>
-                          <div class="col-md-3 col-sm-6">
-                              <button type="submit" class="button btn btn-primary mar-top-2 w-100" id="submit_btn">subscribe</button>
-                          </div>
-                      </div>
-                  </form>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
-<!-- stay connected section  -->
+        <div class="row bodycontainerbg">
+          <div class="col-md-12 col-sm-12">
 
-<!-- footer section  -->
+            <h3>Stay Connected</h3>
+
+          </div>
+          <div class="col-md-12 col-sm-12">
+            <form>
+              <div class="row">
+                <div class="col-md-12 col-sm-12" id="result"></div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="form-group">
+                    <label for="userName"></label>
+                    <input class="form-control" type="text" placeholder="Name" required="" id="userName"
+                      name="userName">
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="form-group">
+                    <label for="companyName"></label>
+                    <input class="form-control" type="text" placeholder="Company" id="companyName" name="companyName">
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="form-group">
+                    <label for="email"></label>
+                    <input class="form-control" type="email" placeholder="Email" required="" id="email" name="email">
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <button type="submit" class="button btn btn-primary mar-top-2 w-100"
+                    id="submit_btn">subscribe</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- stay connected section  -->
+
+  <!-- footer section  -->
   <footer class="footer class">
-    <div class="row bg-footr " >
+    <div class="row bg-footr ">
 
       <div class="col-md-1">
 
       </div>
       <div class="col-md-3">
         <h2><a class='logocls'>trax.</a></h2>
-        <p>Keep away from people who try to belittle your ambitions Small people always do that but the really great Friendly.</p>
+        <p>Keep away from people who try to belittle your ambitions Small people always do that but the really great
+          Friendly.</p>
         <div class="d-table w-100 address-item  ">
           <span class=" align-middle"><i class="fas fa-mobile fa-2x"></i></span>
           <span class=" align-middle ">
-              +01 - 123 - 4567 <a class="d-block" href="#">web@support.com</a>
+            +01 - 123 - 4567 <a class="d-block" href="#">web@support.com</a>
           </span>
-      </div>
+        </div>
       </div>
       <div class="col-md-3">
-        <div >
-        <h3 class="whitecolor bottom25">Latest News</h3>
-        <ul class="latest_news whitecolor">
+        <div>
+          <h3 class="whitecolor bottom25">Latest News</h3>
+          <ul class="latest_news whitecolor">
             <li> <a href="#.">Aenean tristique justo et... </a> <span class="date ">15 March 2019</span> </li>
             <li> <a href="#.">Phasellus dapibus dictum augue... </a> <span class="date ">15 March 2019</span> </li>
             <li> <a href="#.">Mauris blandit vitae. Praesent non... </a> <span class="date ">15 March 2019</span> </li>
-        </ul>
-    </div></div>
+          </ul>
+        </div>
+      </div>
       <div class="col-md-2">
-        <div >
+        <div>
           <h3>Navigation</h3>
-          <ul class="links">
-              <li><a href="#home" >Home</a></li>
-              <li><a href="#about" >About Us</a></li>
-              <li><a href="#pricing" >Our Pricing</a></li>
-              <li><a href="#portfolio" >Portfolio</a></li>
-              <li><a href="#blog" >Our Blog</a></li>
-              <li><a href="#contact" >Contact Us</a></li>
+          <ul class="links" style="list-style-type:circle;">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#pricing">Our Pricing</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#blog">Our Blog</a></li>
+            <li><a href="#contact">Contact Us</a></li>
           </ul>
-      </div>
+        </div>
       </div>
       <div class="col-md-2">
-        <div >
-          <h3 >Business hours</h3>
-          <p >Our support available to help you 24 hours a day, seven days week</p>
-          <ul >
-              <li><span>Monday-Saturday:</span> <span>8.00-18.00</span></li>
-              <li><span>Friday:</span> <span>09:00-21:00</span></li>
-              <li><span>Sunday:</span> <span>09:00-20:00</span></li>
-              <li><span>Calendar Events:</span> <span>24-Hour Shift</span></li>
+        <div>
+          <h3>Business hours</h3>
+          <p>Our support available to help you 24 hours a day, seven days week</p>
+          <ul>
+            <li><span>Monday-Saturday:</span> <span>8.00-18.00</span></li>
+            <li><span>Friday:</span> <span>09:00-21:00</span></li>
+            <li><span>Sunday:</span> <span>09:00-20:00</span></li>
+            <li><span>Calendar Events:</span> <span>24-Hour Shift</span></li>
           </ul>
-      </div>
+        </div>
       </div>
       <div class="col-md-1">
       </div>
     </div>
-  </footer >
-<!-- footer section  -->
+  </footer>
+  <!-- footer section  -->
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -408,21 +945,22 @@
     crossorigin="anonymous"></script>
 
   <script>
-   
-    window.addEventListener('scroll',function(){
-      var header =document.getElementById('headedrid');
-      header.classList.toggle('sticky',window.scrollY >0);
+
+    window.addEventListener('scroll', function () {
+      var header = document.getElementById('nav-header');
+      var windowposY = window.scrollY > 50;
+      header.classList.toggle('sticky', windowposY);
     })
 
-    function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
+    // function openNav() {
+    //   document.getElementById("mySidebar").style.width = "350px";
+    //   document.getElementById("main").style.marginLeft = "250px";
+    // }
 
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-}
+    // function closeNav() {
+    //   document.getElementById("mySidebar").style.width = "0";
+    //   document.getElementById("main").style.marginLeft = "0";
+    // }
   </script>
 </body>
 
