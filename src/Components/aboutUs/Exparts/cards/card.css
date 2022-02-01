@@ -1,0 +1,13 @@
+.card-shape {
+  padding: 2rem 1rem;
+  background: #fff;
+  text-align: center;
+  height: 108px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.transfrom-body {
+  transform: translate(0px, 35%);
+  margin-top: -4rem;
+}

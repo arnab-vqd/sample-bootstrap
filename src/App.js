@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import AboutUs from './Components/aboutUs/AboutUs';
+import ContactUs from './Components/contactUs/ContactUs';
+import CrouselSection from './Components/crouselSection/CrouselSection';
+import Footer from './Components/footer/Footer';
+import Header from './Components/header/Header'
+import LetestBlog from './Components/letestBlog/LetestBlog';
+import MapSection from './Components/mapSection/MapSection';
+import Stayconnected from './Components/stayconnected/Stayconnected';
+import OurPriceing from './Components/ourPriceing/OurPriceing';
+// import ProtfolioSay from './Components/portfolio/protfolioSay/ProtfolioSay';
+import Protfolio from './Components/portfolio/Portfolio';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header/>
+      <CrouselSection/>
+      <AboutUs/>
+      <OurPriceing/>
+      <Protfolio/>
+      {/* <ProtfolioSay/> */}
+      <LetestBlog/>
+      <ContactUs/>
+      <MapSection/>
+      <Stayconnected/>
+      <Footer/>
     </div>
   );
 }

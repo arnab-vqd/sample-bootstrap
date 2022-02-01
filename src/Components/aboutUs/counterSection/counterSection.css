@@ -1,0 +1,13 @@
+.sins-bg {
+  background: url("/public/assets/counter-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: unset;
+}
+.font-100 {
+  font-size: 100px;
+}
+.fw-3 {
+  font-weight: 300;
+}

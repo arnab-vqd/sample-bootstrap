@@ -1,0 +1,13 @@
+.protfolio-cs {
+  background-image: url(../../../../public/assets/people-say.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.test-star {
+  font-size: 12px;
+  color: #ffc13c;
+  cursor: pointer;
+}
