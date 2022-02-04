@@ -60,7 +60,7 @@ class ContactUs extends React.Component{
                 <p className="bottom10"><a href="mailto:polpo@traxagency.co.au">polpo@traxagency.com</a></p>
                 <p className="bottom10">Mon-Fri: 9am-5pm</p>
               </div>
-              <ul className="li-inline-cs list-style-none">
+              <ul className="li-inline-cs list-style-none d-none ">
                 <li><a href="#" className="facebook p-1 "><i className="fa fa-facebook"></i> </a> </li>
                 <li><a href="#" className="twitter p-1"><i className="fa fa-twitter"></i> </a> </li>
                 <li><a href="#" className="linkedin p-1"><i className="fa fa-linkedin"></i> </a> </li>
