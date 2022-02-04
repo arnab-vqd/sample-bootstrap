@@ -1,0 +1,6 @@
+.overlay-dark {
+  background-image: none;
+  background-color: #000;
+  z-index: 1;
+  visibility: visible;
+}

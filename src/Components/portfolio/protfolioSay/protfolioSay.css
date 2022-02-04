@@ -11,10 +11,11 @@
   color: #ffc13c;
   cursor: pointer;
 }
-
+.ml-2 {
+  margin-left: 1rem;
+}
 .img-wdt {
-  width: 100% !important;
-  height: 80% !important;
+  width: 30% !important;
   border-radius: 50%;
   /* transform: translate(0, -50px); */
   z-index: 10;

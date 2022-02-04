@@ -9,18 +9,18 @@ import LetestBlog from './Components/letestBlog/LetestBlog';
 import MapSection from './Components/mapSection/MapSection';
 import Stayconnected from './Components/stayconnected/Stayconnected';
 import OurPriceing from './Components/ourPriceing/OurPriceing';
-// import ProtfolioSay from './Components/portfolio/protfolioSay/ProtfolioSay';
 import Protfolio from './Components/portfolio/Portfolio';
+import ServiceSlider from "./Components/serviceSlider/ServiceSlider";
 
 function App() {
   return (
     <div>
       <Header/>
       <CrouselSection/>
+      <ServiceSlider/>
       <AboutUs/>
       <OurPriceing/>
       <Protfolio/>
-      {/* <ProtfolioSay/> */}
       <LetestBlog/>
       <ContactUs/>
       <MapSection/>

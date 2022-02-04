@@ -4,3 +4,12 @@
 .marl-3 {
   margin-left: 3rem;
 }
+.spn-hvr {
+  cursor: pointer;
+}
+.div-hvr :hover .spn-hvr {
+  color: #24cdd5;
+}
+.div-hvr :hover .icon {
+  margin-bottom: 1rem;
+}
