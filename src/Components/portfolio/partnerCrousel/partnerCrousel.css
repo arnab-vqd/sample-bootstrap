@@ -1,0 +1,10 @@
+.pad-7-5 {
+  padding: 7rem 5rem;
+}
+.slick-dots {
+  display: none !important;
+}
+.slide {
+  width: 30%;
+  height: 20vh;
+}

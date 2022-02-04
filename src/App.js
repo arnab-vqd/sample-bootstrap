@@ -1,3 +1,5 @@
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import AboutUs from './Components/aboutUs/AboutUs';
 import ContactUs from './Components/contactUs/ContactUs';
 import CrouselSection from './Components/crouselSection/CrouselSection';

@@ -86,3 +86,10 @@
 .w-35 {
   width: 35%;
 }
+
+.icn-alin {
+  flex-direction: row;
+}
+.icn-alin a {
+  padding-left: 20px !important;
+}

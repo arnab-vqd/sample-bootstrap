@@ -50,7 +50,7 @@ import '../ourPriceing/ourPriceing.css'
           </div>
         </div>
       </div> */}
-  <label class="toggler toggler--is-active" id="filt-monthly">Monthly</label>
+  <label class="toggler toggler--is-active " id="filt-monthly">Monthly</label>
   <div class="toggle">
     <input type="checkbox" id="switcher" class="check"/>
     <b class="b switch"></b>
@@ -58,7 +58,7 @@ import '../ourPriceing/ourPriceing.css'
   <label class="toggler" id="filt-hourly">Hourly</label>
   <div id="monthly" class="wrapper-full">
     <div id="pricing-chart-wrap">
-      <div id="pricing-chart">
+      <div id="pricing-chart" style={{padding:'0, 14rem'}}>
         <div id="smaller-plans">
             <div class="plan">
               <div class="price">

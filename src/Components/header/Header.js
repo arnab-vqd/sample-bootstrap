@@ -4,11 +4,11 @@ import '../header/header.css'
 
 const Header = () => {
   return (<div>
-     <Navbar   className='transparent-bg' expand={false}>
+     <Navbar   className='' expand={false}>
             <Container >
                 <Navbar.Brand to="/">
-                <img src="../assets/images/logo-transparent.png" alt="logo" className="logo-default"/>
-                <img src="../assets/images/logo.png" alt='logo1'className="logo-scrolled"/>
+                {/* <img src="../assets/images/logo-transparent.png" alt="logo" className="logo-default"/> */}
+                <img src="/assets/logo.png" alt='logo1'className="logo-scrolled"/>
                 </Navbar.Brand>
 
                 <div className="">
@@ -56,7 +56,7 @@ const Header = () => {
                         </Nav>
                     </Offcanvas.Body>
                     <div className="side-footer w-100">
-                <Nav className="social-icons link-wrapper white top40">
+                <Nav className="social-icons link-wrapper white icn-alin top40">
                     <Nav.Link href="/" className="facebook"><i className="fab fa-facebook-f"></i> </Nav.Link> 
                     <Nav.Link href="/" className="twitter"><i className="fab fa-twitter"></i> </Nav.Link> 
                     <Nav.Link href="/" className="insta"><i className="fab fa-instagram"></i> </Nav.Link> 
