@@ -1,0 +1,50 @@
+.bodycontainerbg {
+  background-color: #fff;
+}
+.bodycontainer {
+  width: 100%;
+  height: 0vh;
+  transform: translate(0, -100px);
+  contain: "";
+  /* background-color: transparent; */
+}
+.card-box {
+  padding: 20px;
+  color: #fff;
+}
+
+.bg-clipboard:hover span i,
+.bg-laptop:hover span i,
+.bg-globe:hover span i {
+  transform: scale(1.3);
+  transition: all 1s;
+}
+.a-link a:hover {
+  text-decoration: none;
+}
+.card-box a {
+  color: #fff;
+}
+.bg-globe {
+  background-color: #26313c;
+  left: 4rem;
+}
+.bg-clipboard {
+  background-image: linear-gradient(
+    to right,
+    #5192e1 0%,
+    #23ced5 51%,
+    #5192e1 100%
+  );
+  position: relative;
+  height: 120%;
+  margin-top: -2rem;
+  display: block;
+  z-index: 1;
+}
+.bg-laptop {
+  background-color: #26313c;
+  right: 10rem;
+  position: absolute;
+  width: 25%;
+}

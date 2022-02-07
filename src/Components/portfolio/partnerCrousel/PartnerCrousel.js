@@ -41,28 +41,28 @@ class PartnerCrousel  extends React.Component {
       <div class="container">
       <Slider {...settings} className="pad-7-5">
       <div>
-      <div class="slide"><img  src="/assets/logo-4.png"/></div>
+      <div class="slide img-slide"><img  src="/assets/logo-4.png"/></div>
           </div>
           <div>
-          <div class="slide"><img  src="/assets/logo-4.png"/></div>
+          <div class="slide img-slide"><img  src="/assets/logo-4.png"/></div>
           </div>
           <div>
-          <div class="slide"><img  src="/assets/logo-4.png"/></div>
+          <div class="slide img-slide"><img  src="/assets/logo-4.png"/></div>
           </div>
           <div>
-          <div class="slide"><img  src="/assets/logo-4.png"/></div>
+          <div class="slide img-slide"><img  src="/assets/logo-4.png"/></div>
           </div>
           <div>
-          <div class="slide"><img  src="/assets/logo-4.png"/></div>
+          <div class="slide img-slide"><img  src="/assets/logo-4.png"/></div>
           </div>
           <div>
-          <div class="slide"><img  src="/assets/logo-4.png"/></div>
+          <div class="slide img-slide"><img  src="/assets/logo-4.png"/></div>
           </div>
           <div>
-          <div class="slide"><img  src="/assets/logo-4.png"/></div>
+          <div class="slide img-slide"><img  src="/assets/logo-4.png"/></div>
           </div>
           <div>
-          <div class="slide"><img  src="/assets/logo-4.png"/></div>
+          <div class="slide img-slide"><img  src="/assets/logo-4.png"/></div>
           </div>
    {/* <section class="customer-logos slider">
       <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"/></div>

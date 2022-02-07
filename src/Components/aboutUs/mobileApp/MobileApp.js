@@ -41,21 +41,21 @@ class MobileApp extends React.Component{
             <div className="col-md-4 pt-10 text-end  ">
               <div className=" div-hvr">
 
-                <div className="icon pb-3"><i className="fa fa-cog fa-2x blue-clr"></i></div>
+                <div className="icon pb-3"><i className="fa fa-cog fa-2x icon-font blue-clr"></i></div>
                 <div className="text">
                   <h3 className="pb-3">
-                    <span className="">Theme Options</span>
+                    <span className="spn-hvr">Theme Options</span>
                   </h3>
                   <p className="pb-3">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
 
                 </div>
               </div>
-              <div className=" ">
+              <div className="div-hvr ">
 
-                <div className="icon pb-3"><i className="fa fa-edit fa-2x blue-clr"></i></div>
+                <div className="icon pb-3"><i className="fa fa-edit fa-2x icon-font blue-clr"></i></div>
                 <div className="text">
                   <h3 className="pb-3">
-                    <span className="">Customization</span>
+                    <span className="spn-hvr">Customization</span>
                   </h3>
                   <p className="pb-3">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
 
@@ -66,23 +66,23 @@ class MobileApp extends React.Component{
               <img src="assets/iphone.png" id="pnoneimg" className=" marl-3" alt=""/>
             </div>
             <div className="col-md-4 pt-10 text-Start">
-              <div className=" ">
+              <div className=" div-hvr">
 
-                <div className="icon pb-3"><i className="fa fa-code fa-2x blue-clr"></i></div>
+                <div className="icon pb-3"><i className="fa fa-code fa-2x icon-font blue-clr"></i></div>
                 <div className="text">
                   <h3 className="pb-3">
-                    <span className="">Powerful Code</span>
+                    <span className="spn-hvr">Powerful Code</span>
                   </h3>
                   <p className="pb-3">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
 
                 </div>
               </div>
-              <div className=" ">
+              <div className="div-hvr  ">
 
-                <div className="icon pb-3"><i className="fa fa-folder-open fa-2x blue-clr"></i></div>
+                <div className="icon pb-3"><i className="fa fa-folder-open fa-2x icon-font  blue-clr"></i></div>
                 <div className="text">
                   <h3 className="pb-3">
-                    <span className="">Documentation </span>
+                    <span className="spn-hvr">Documentation </span>
                   </h3>
                   <p className="pb-3">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
 

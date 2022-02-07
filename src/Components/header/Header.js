@@ -1,14 +1,27 @@
-import React from 'react';
+import React ,{useEffect} from 'react';
 import { Navbar, Nav, Container, Offcanvas } from "react-bootstrap";
 import '../header/header.css'
 
 const Header = () => {
+
+    useEffect(() => {
+        window.addEventListener('scroll', isSticky);
+        return () => {
+            window.removeEventListener('scroll', isSticky);
+        };
+    });
+    const isSticky = (e) => {
+        const header = document.querySelector('.header-section');
+        const scrollTop = window.scrollY;
+        scrollTop >= 250 ? header.classList.add('is-sticky') : header.classList.remove('is-sticky');
+    };
   return (<div>
-     <Navbar   className='' expand={false}>
+     <Navbar   className='header-section' expand={false}>
             <Container >
                 <Navbar.Brand to="/">
+                    {isSticky? <img src="/assets/logo.png" alt='logo1'className="logo-scrolled"/>:<img src="/assets/logo-transparent.png" alt="logo" className="logo-default"/>}
                 {/* <img src="../assets/images/logo-transparent.png" alt="logo" className="logo-default"/> */}
-                <img src="/assets/logo.png" alt='logo1'className="logo-scrolled"/>
+                {/* <img src="/assets/logo.png" alt='logo1'className="logo-scrolled"/> */}
                 </Navbar.Brand>
 
                 <div className="">
