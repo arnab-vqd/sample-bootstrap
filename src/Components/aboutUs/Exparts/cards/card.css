@@ -5,9 +5,44 @@
   height: 108px;
   position: relative;
   overflow: hidden;
+  transition: 0.8s;
   z-index: 1;
 }
 .transfrom-body {
   transform: translate(0px, 35%);
   margin-top: -4rem;
+}
+
+.card-shape:after {
+  content: "";
+  width: 280px;
+  height: 108px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-200%, -40%);
+  z-index: 20;
+  background-color: rgba(24, 220, 255, 00.8);
+  transition: 0.8;
+}
+
+.card-shape:hover::after {
+  transform: translate(-50%, -50%);
+}
+/* .card-img-top {
+  transition: 0.8s;
+  height: 200px;
+  width: 250px;
+  overflow: hidden;
+}
+.card-img-top:hover {
+  transform: scale(1.4);
+  overflow: hidden;
+} */
+
+.team-content:hover {
+  font-size: 12px;
+  position: absolute;
+  color: #fff;
+  z-index: 10;
 }
