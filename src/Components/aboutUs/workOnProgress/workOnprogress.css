@@ -40,3 +40,10 @@
   right: 100%;
   top: 8%;
 }
+
+/* .line-add li .circle:nth-child(1)::before {
+  content: "";
+  width: 0;
+  right: 0;
+  top: 0;
+} */

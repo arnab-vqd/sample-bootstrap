@@ -12,6 +12,8 @@
     "react": "^16.14.0",
     "react-bootstrap": "^2.1.1",
     "react-dom": "^16.14.0",
+    "react-image": "^4.0.3",
+    "react-photo-gallery": "^8.0.0",
     "react-redux": "^7.2.6",
     "react-scripts": "5.0.0",
     "react-slick": "^0.28.1",
