@@ -1,7 +1,106 @@
 import React from "react";
-import '../contactUs/contactUs.css'
+import '../contactUs/contactUs.css';
+import Alert from 'react-bootstrap/Alert';
+import emailjs from '@emailjs/browser';
 class ContactUs extends React.Component{
- render(){
+
+  constructor(props){
+    super(props);
+    this.state={
+      userName:'',
+      email:' ',
+      message:'',
+      errors:''
+    }
+    console.log(this.state);
+    this.contatfrm=React.createRef()
+}
+
+hendelValChange(e){
+  this.setState({[e.target.name]:e.target.value})
+
+}
+fromValidation=()=>{
+  const {userName,email,message}=this.state;
+  let isvalid=true;
+  const errors={};
+
+  //all regex
+  var regName = /^[a-zA-Z ]+[(\.|')?[a-zA-Z ]+(\.|')?]+$/; 
+  if (!userName.length || !email.length || !message.length){
+    errors.emptyFilds="Please provide the missing fields. ";
+    isvalid=false;
+    console.log(errors);
+    console.log("flid errors",errors.emptyFilds);
+  }
+  else if (typeof  email!== "undefined") {
+          
+    var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+    if (!pattern.test(email)) {
+      isvalid = false;
+      errors.emailValid = "Please enter valid email address.";
+    }
+  }
+  else{
+    isvalid = true;
+    errors.sucess = "Hi {this.state.name} Thank you for contacting us.";
+  }
+  this.setState({errors});
+  console.log("errors in state",errors);
+  return isvalid;
+
+  
+
+  //   else if (userName.match(regName)){
+  //     errors.userNameLength='Please enter your full name (first & last name).'
+  //     isvalid=false;
+  //     console.log(errors);
+  //   }
+  // if (!email.length){
+  //   errors.emailLength="please enter a Email ";
+  //   isvalid=false;
+  //   console.log(errors);
+  // }
+  // if (!message.length){
+  //   errors.messageLength="please enter a Message ";
+  //   isvalid=false;
+  //   console.log(errors);
+  // }
+ 
+}
+handelSubmit=(e)=>{
+  e.preventDefault();
+  const isvalid= this.fromValidation();
+  console.log(this.state);
+  if (isvalid){
+    emailjs.sendForm( 'service_jp04hva','template_xnlxt93', this.contatfrm.current, 'user_7g6V1hlKvYRZzlXZdf3qX')
+    .then((result) => {
+        console.log("sucess:",result.text);
+    }, (error) => {
+        console.log("error:",error.text);
+    });
+    this.setState({userName:'',email:'',message:""})      
+    alert('sucessfully message send')
+  }
+ 
+  
+      
+  
+    
+  
+}
+
+// {
+//   !this.isvalid?<Alert variant="danger">
+//   {/* { errors[key]} */}
+//   <Alert.Heading>{errors.emptyFilds}</Alert.Heading>
+  
+//  </Alert>:""
+// }
+
+render(){
+  const {userName,email,message,errors}=this.state;
+  
      return(<>
       <section id="contactus ">
     <div className="container  pad-xy">
@@ -18,30 +117,39 @@ class ContactUs extends React.Component{
           </div>
           <div className="col-md-6 col-sm-12">
             <div>
-              <form className="getin_form" onSubmit={{return:'false'}}> 
+              <form className="getin_form"  ref={this.contatfrm}> 
                 <div className="row px-2">
-                  <div className="col-md-12 col-sm-12" id="result1"></div>
+                  <div className="col-md-12 col-sm-12" id="result1">
+                    {Object.keys(errors).map((key)=>{
+                      return(<Alert variant="danger" key={key}>
+                     { errors[key]}
+                    </Alert>)
+                    })}
+                   
+                  </div>
                   <div className="col-md-12 col-sm-12">
                     <div className="form-group">
                       <label htmlFor="name1"></label>
-                      <input className="form-control" id="name1" type="text" placeholder="Name" required="" name="userName"/>
+                      <input className="form-control" id="name1" type="text" placeholder="Name" required="" name="userName" value={this.state.userName} onChange={(e)=>{this.hendelValChange(e)}}/>
                     </div>
                   </div>
                   <div className="col-md-12 col-sm-12">
                     <div className="form-group">
                       <label htmlFor="email1"></label>
-                      <input className="form-control" type="email" id="email1" placeholder="Email" name="email"/>
+                      <input type="email" name="email"  placeholder="Email" className="form-control" required=""value={this.state.email} onChange={(e)=>{this.hendelValChange(e)}} />
+                      
                     </div>
                   </div>
                   <div className="col-md-12 col-sm-12">
                     <div className="form-group">
                       <label htmlFor="message1"></label>
                       <textarea className="form-control my-3" id="message1" placeholder="Message" required="" rows={5}
-                        name="message"></textarea>
+                        name="message" value={this.state.message} onChange={(e)=>{this.hendelValChange(e)}}></textarea>
                     </div>
                   </div>
                   <div className="col-md-12 col-sm-12">
-                    <button type="submit" id="submit_btn1" className="button btngrident btn btn-primary w-100 mb-5">Send</button>
+                    <button type="submit" id="submit_btn1" className="button btngrident btn btn-primary w-100 mb-5"  onClick={this.handelSubmit}>Send</button>
+                    
                   </div>
                 </div>
               </form>
