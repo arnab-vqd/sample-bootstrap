@@ -41,10 +41,6 @@ fromValidation=()=>{
       errors.emailValid = "Please enter valid email address.";
     }
   }
-  else{
-    isvalid = true;
-    errors.sucess = "Hi {this.state.name} Thank you for contacting us.";
-  }
   this.setState({errors});
   console.log("errors in state",errors);
   return isvalid;
@@ -75,19 +71,19 @@ handelSubmit=(e)=>{
   if (isvalid){
     emailjs.sendForm( 'service_jp04hva','template_xnlxt93', this.contatfrm.current, 'user_7g6V1hlKvYRZzlXZdf3qX')
     .then((result) => {
-        console.log("sucess:",result.text);
+      const res=result;
+        console.log("sucess:",res.text);
+    this.setState({sucess:res})
+    console.log('inside emailjs:',this.state);
     }, (error) => {
         console.log("error:",error.text);
     });
-    this.setState({userName:'',email:'',message:""})      
-    alert('sucessfully message send')
-  }
- 
-  
-      
-  
     
-  
+    setTimeout(()=>{this.setState({userName:'',email:'',message:""})},10000)
+          
+    // alert('sucessfully message send')
+    console.log("onSubmit:",this.state);
+  } 
 }
 
 // {
@@ -125,6 +121,7 @@ render(){
                      { errors[key]}
                     </Alert>)
                     })}
+                    {this.state.sucess?<Alert variant="success" >Hi {this.state.userName} Thank you for contacting us.</Alert>:null}
                    
                   </div>
                   <div className="col-md-12 col-sm-12">
