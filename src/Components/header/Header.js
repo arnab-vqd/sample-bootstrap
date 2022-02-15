@@ -1,5 +1,5 @@
 import React ,{useEffect} from 'react';
-import { Navbar, Nav, Container, Offcanvas } from "react-bootstrap";
+import { Navbar, Nav, Container, NavLink, Offcanvas } from "react-bootstrap";
 import '../header/header.css'
 
 const Header = () => {
@@ -27,22 +27,24 @@ const Header = () => {
                 <div className="">
                 <ul className="navbar-flex link-color mx-auto ms-xl-auto me-xl-0" >
                     <li className="nav-item">
-                    <Nav.Link className='' href="/about">Home</Nav.Link>
+                    <NavLink to="/" activeClassName="active">
+                        Home
+                    </NavLink>
                     </li>
                     <li className="nav-item">
-                    <Nav.Link href="/about">About</Nav.Link>
+                    <Nav.Link to="/">About</Nav.Link>
                     </li>
                     <li className="nav-item">
-                    <Nav.Link href="/about">Our Pricing</Nav.Link>
+                    <Nav.Link to="/">Our Pricing</Nav.Link>
                     </li>
                     <li className="nav-item">
-                    <Nav.Link href="/about">Portfolio</Nav.Link>
+                    <Nav.Link to="/">Portfolio</Nav.Link>
                     </li>
                     <li className="nav-item">
-                    <Nav.Link href="/about">Our Blog</Nav.Link>
+                    <Nav.Link to="/">Our Blog</Nav.Link>
                     </li>
                     <li className="nav-item">
-                    <Nav.Link href="/about">Contact Us</Nav.Link>
+                    <Nav.Link to="/">Contact Us</Nav.Link>
                     </li>
                 </ul>
             </div>  
@@ -60,19 +62,19 @@ const Header = () => {
                     </Offcanvas.Header>
                     <Offcanvas.Body className=' p-4'>
                         <Nav className="justify-content-end link-wrapper  text-white-clr flex-grow-1 pe-3">
-                            <Nav.Link className='link' href="/">Home</Nav.Link>
-                            <Nav.Link className='link' href="/signup">About</Nav.Link>
-                            <Nav.Link className='link' href="/about">Our Pricing</Nav.Link>
-                            <Nav.Link className='link' href="/about">Our Blog</Nav.Link>
-                            <Nav.Link className='link' href="/about">Contact Us</Nav.Link>
-                            <Nav.Link className='link' href="/about">Portfolio</Nav.Link>                          
+                            <Nav.Link className='link active' to="/">Home</Nav.Link>
+                            <Nav.Link className='link' to="/signup">About</Nav.Link>
+                            <Nav.Link className='link' to="/">Our Pricing</Nav.Link>
+                            <Nav.Link className='link' to="/">Our Blog</Nav.Link>
+                            <Nav.Link className='link' to="/">Contact Us</Nav.Link>
+                            <Nav.Link className='link' to="/">Portfolio</Nav.Link>                          
                         </Nav>
                     </Offcanvas.Body>
                     <div className="side-footer w-100">
                 <Nav className="social-icons link-wrapper white icn-alin top40">
-                    <Nav.Link href="/" className="facebook"><i className="fab fa-facebook-f"></i> </Nav.Link> 
-                    <Nav.Link href="/" className="twitter"><i className="fab fa-twitter"></i> </Nav.Link> 
-                    <Nav.Link href="/" className="insta"><i className="fab fa-instagram"></i> </Nav.Link> 
+                    <Nav.Link to="/" className="facebook"><i className="fab fa-facebook-f"></i> </Nav.Link> 
+                    <Nav.Link to="/" className="twitter"><i className="fab fa-twitter"></i> </Nav.Link> 
+                    <Nav.Link to="/" className="insta"><i className="fab fa-instagram"></i> </Nav.Link> 
                 </Nav>
                 <p className="whitecolor">&copy; <span id="year">2019-2022</span> Trax. Made With Love by ThemesIndustry</p>
             </div>

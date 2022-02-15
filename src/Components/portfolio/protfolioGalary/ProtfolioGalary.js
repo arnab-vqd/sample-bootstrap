@@ -28,21 +28,16 @@ const ProtfolioGalary = () => {
         </div>
         <div class="col-md-12 p-0-5">
           <div class="d-flex justify-content-center">
-            <div data-filter="*" class="">
-              <span>All</span>
-            </div>
-            <div data-filter=".digital" class=" filter-item">
-              <span>Digital</span>
-            </div>
-            <div data-filter=".design" class=" filter-item">
-              <span>Design</span>
-            </div>
-            <div data-filter=".brand" class=" filter-item">
-              <span>Brand</span>
-            </div>
-            <div data-filter=".graphics" class=" filter-item">
-              <span>Graphics</span>
-            </div>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item active" aria-current="page">All</li>
+              <li class="breadcrumb-item"><a href="#">Digital</a></li>
+              <li class="breadcrumb-item"><a href="#">Design</a></li>
+              <li class="breadcrumb-item"><a href="#">Brand</a></li>
+              <li class="breadcrumb-item"><a href="#">Graphics</a></li>
+            </ol>
+          </nav>
+  
           </div>
           <Gallery photos={photos} direction={"column"} /> 
           

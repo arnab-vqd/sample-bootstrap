@@ -19,6 +19,7 @@
 }
 .link-color li .nav-link:hover {
   color: #24cdd5 !important;
+  border-bottom: 2px #23cdd5 solid;
 }
 .gradient-bg {
   background-image: linear-gradient(
