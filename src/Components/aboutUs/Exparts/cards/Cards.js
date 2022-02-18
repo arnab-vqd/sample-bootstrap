@@ -14,7 +14,7 @@ function Cards(props) {
                       
           <div className="col-md-3 text-center ">
                     <div className="card " key={index}>
-                <a href="#"><img className="card-img-top" width="350" height="200" src={thro.img}
+                <a href="#"><img className="card-img-top"  src={thro.img}
                     alt="Card image cap"/></a>
                 <div className="card-body card-shape">
 

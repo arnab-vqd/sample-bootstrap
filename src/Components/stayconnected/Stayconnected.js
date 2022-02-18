@@ -65,7 +65,7 @@ handelSubmit=(e)=>{
   } 
 }
     render(){
-  const {userName,email,errors}=this.state;
+  const {userName,errors}=this.state;
         return(
             <div>
                 <section id="stayconnect">
@@ -86,7 +86,7 @@ handelSubmit=(e)=>{
                      { errors[key]}
                     </Alert>)
                     })}
-                    {this.state.sucess?<Alert variant="success" >Hi {this.state.userName} Thank you for contacting us.</Alert>:null}
+                    {this.state.sucess?<Alert variant="success" >Hi {userName} Thank you for contacting us.</Alert>:null}
             <form ref={this.contatfrm}>
               <div className="row">
                 <div className="col-md-12 col-sm-12" id="result"></div>

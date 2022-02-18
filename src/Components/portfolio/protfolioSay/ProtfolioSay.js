@@ -32,7 +32,7 @@ render(){
         <Carousel className="d-r" fade>
           <Carousel.Item>
             <div className="row p-0-5">
-              <div className="col-md-6"> <img  src={this.state.data[0].img} className="img-wdt" alt='...'/>
+              <div className="col-md-6">  <div className="img-container"><img  src={this.state.data[0].img} className="img-wdt" alt='...'/></div>
                 <h4 className="blue-clr font-14 ml-2 ">
                   <a href="#" className="blue-clr font-14 ml-2"> {this.state.data[0].name}</a>
                 </h4>
@@ -52,7 +52,7 @@ render(){
           </Carousel.Item>
           <Carousel.Item>
           <div className="row p-0-5">
-              <div className="col-md-6"> <img  src={this.state.data[1].img} className="img-wdt" alt='...'/>
+              <div className="col-md-6"> <div className="img-container"> <img  src={this.state.data[1].img} className="img-wdt" alt='...'/></div>
                 <h4 className="blue-clr font-14 ml-2 ">
                   <a href="#" className="blue-clr font-14 ml-2"> {this.state.data[1].name}</a>
                 </h4>
@@ -72,7 +72,8 @@ render(){
           </Carousel.Item>
           <Carousel.Item>
           <div className="row p-0-5">
-              <div className="col-md-6"> <img  src={this.state.data[2].img} className="img-wdt" alt='...'/>
+              <div className="col-md-6"> 
+              <div className="img-container"><img  src={this.state.data[2].img} className="img-wdt" alt='...'/></div>
                 <h4 className="blue-clr font-14 ml-2 ">
                   <a href="#" className="blue-clr font-14 ml-2"> {this.state.data[2].name}</a>
                 </h4>
@@ -92,7 +93,7 @@ render(){
           </Carousel.Item>
           <Carousel.Item>
           <div className="row p-0-5">
-              <div className="col-md-6"> <img  src={this.state.data[3].img} className="img-wdt" alt='...'/>
+              <div className="col-md-6"> <div className="img-container"> <img  src={this.state.data[3].img} className="img-wdt" alt='...'/></div>
                 <h4 className="blue-clr font-14 ml-2 ">
                   <a href="#" className="blue-clr font-14 ml-2"> {this.state.data[3].name}</a>
                 </h4>

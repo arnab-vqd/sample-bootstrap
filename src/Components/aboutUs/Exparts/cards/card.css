@@ -1,3 +1,15 @@
+.card {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.card-img-top {
+  transition: 0.5s all ease-in-out;
+  position: center;
+}
+.card:hover img {
+  transform: scale(1.3);
+}
 .card-shape {
   padding: 2rem 1rem;
   background: #fff;
@@ -35,10 +47,7 @@
   width: 250px;
   overflow: hidden;
 }
-.card-img-top:hover {
-  transform: scale(1.4);
-  overflow: hidden;
-} */
+*/
 
 .team-content:hover {
   font-size: 12px;
