@@ -20,13 +20,14 @@ function Cards(props) {
 
                   <div className="team-content">
                     <h4 className="darkcolor">{thro.name}</h4>
-                    <p>{thro.details}</p>
-                    <ul className="social-icons-simple li-inline-cs">
-                      <li><a className="facebook" href="/"><i className="fa fa-facebook-f"></i> </a> </li>
-                      <li><a className="twitter" href="/"><i className="fa fa-twitter"></i> </a> </li>
-                      <li><a className="insta" href="/"><i className="fa fa-instagram"></i> </a> </li>
-                    </ul>
+                    <p className='team-details'>{thro.details}</p>
+                      <p className="social-icons-simple socila-icons-link  ">
+                      <a className="facebook" href="/">a<i className="fa fa-facebook-square"></i> </a>
+                      <a className="twitter" href="/">b<i className="fa fa-twitter"></i> </a>                 
+                      <a lassName="insta" href="/">c<i className="fa fa-instagram"></i> </a>             
+                      </p>
                   </div>
+                 
                 </div>
               </div>
                     
