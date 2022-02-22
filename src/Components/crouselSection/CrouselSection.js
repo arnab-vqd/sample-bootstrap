@@ -25,7 +25,7 @@ class CrouselSection extends React.Component{
       // }
     };
   return (<>
-  <div className='' style={{marginLeft: "-25px"}}>
+       {/* <div className='' style={{marginLeft: "-25px"}}>
 <Slider {...settings}   >
       <div>
         <img
@@ -55,12 +55,10 @@ class CrouselSection extends React.Component{
       <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p></div>
       </div>
       </Slider>
-        </div>
+        </div> */}
       
-    {/* <Carousel>
-    1800112211
-    18004253800
-    1800111101
+    <Carousel>
+    
   <Carousel.Item interval={1000}>
     <img
       className="d-block bg-clipboard w-100"
@@ -95,7 +93,7 @@ class CrouselSection extends React.Component{
       <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
     </Carousel.Caption>
   </Carousel.Item>
-</Carousel> */}
+</Carousel>
   </>);
   }
 };
