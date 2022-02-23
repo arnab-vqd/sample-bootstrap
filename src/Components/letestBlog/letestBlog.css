@@ -13,3 +13,42 @@
 .ml-7 {
   margin-left: 7px;
 }
+.li-class a {
+  color: #a5a5a5;
+  font-size: 12px;
+  font-weight: 600;
+}
+.text-black1 {
+  font-weight: 400;
+}
+/* .comment {
+  padding: 8px;
+} */
+.cwdt-90 {
+  width: 90%;
+}
+.card-overflow {
+  overflow: hidden;
+}
+.card-img-top {
+  transition: 0.2s all ease-in-out;
+  position: center;
+}
+.card:hover img {
+  transform: scale(1.1);
+}
+.card:hover .text-black1,
+.li-class:hover i,
+.li-class:hover span {
+  color: #24cdd5;
+}
+.prev-btn-icon {
+  display: flex;
+  flex-direction: row;
+  color: red;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  transform: translate(0, 0);
+  height: 50px;
+}

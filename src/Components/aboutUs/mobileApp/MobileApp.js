@@ -1,26 +1,19 @@
-import React from "react";
+import React ,{useState} from "react";
 import '../mobileApp/mobileApp.css'
-class MobileApp extends React.Component{
-    //     constructor(props){
-    //         super(props)
-    //      const image = document.getElementById('pnoneimg');
-    //      this.state ={
-    //          image
-    //      }
-    //      console.log(image.src);
+  function MobileApp(){
+    const [style, setStyle] = useState({display: 'none'});
+    const [photoView, setPhotoview] = useState(false);
+    
 
-    //     }
-        
-    //   changeImage=()=> {
-        
 
-    //     if (image.src.match("assets/iphone")) {
-    //       image.src = "assets/iphone.png";
-    //     } else {
-    //       image.src = "assets/iphone.png";
+    // const photoViewToggle=(e)=>{
+    //   if (isToggle){
+    //   setPhotoview({display:'block'})
     //     }
-    //   }
-    render(){
+    //     else{
+    //   setPhotoview({display:'none'})
+    //     }
+    // }
         return(<>
         <section className="pad-xy">
       <div className="container">
@@ -63,7 +56,53 @@ class MobileApp extends React.Component{
               </div>
             </div>
             <div className="col-md-4 ">
-              <img src="assets/iphone.png" id="pnoneimg" className=" marl-3" alt=""/>
+              {/* <img src="assets/iphone.png" id="pnoneimg" className=" marl-3" alt=""/> */}
+              {/* <div className="phoneImg">
+              </div>
+              <div className="  "></div> */ }
+
+                <div class="app-image top30" onMouseEnter={e => {
+                     setStyle({display: 'block'});
+                 }}
+                 onMouseLeave={e => {
+                     setStyle({display: 'none'})
+                 }}>
+                    <div class="app-slider-lock-btn" style={style}  onClick={()=>setPhotoview(!photoView)}> </div>
+                    {!photoView ?  <div class="app-slider-lock" >
+                        <img src="assets/iphone-slide-lock.jpg" alt=""/>
+                    </div>:
+                    <div class="app-slider-photoView"   >
+                        <img src="assets/iphone-slide1.jpg" alt=""/>
+                    </div>}
+                    
+                    {/*<div id="app-slider" class="owl-carousel owl-theme owl-loaded owl-drag">
+                        
+                        
+                        
+                     <div class="owl-stage-outer"><div class="owl-stage" ><div class="owl-item cloned" ><div class="item">
+                            <img src="assets/iphone-slide2.jpg" alt=""/>
+                        </div></div><div class="owl-item cloned"><div class="item">
+                            <img src="assets/iphone-slide3.jpg" alt=""/>
+                        </div></div><div class="owl-item active" ><div class="item">
+                            <img src="assets/iphone-slide1.jpg" alt=""/>
+                        </div></div><div class="owl-item" ><div class="item">
+                            <img src="assets/iphone-slide2.jpg" alt=""/>
+                        </div></div><div class="owl-item" ><div class="item">
+                            <img src="assets/iphone-slide3.jpg" alt=""/>
+                        </div></div><div class="owl-item cloned" ><div class="item">
+                            <img src="assets/iphone-slide1.jpg" alt=""/>
+                        </div></div><div class="owl-item cloned" ><div class="item">
+                            <img src="assets/iphone-slide2.jpg" alt=""/>
+                        </div></div></div></div>
+                        <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div> */}
+                    <img src="assets/iphone.png" alt="image"/>
+
+                    
+                </div>
+
+               
+
+
             </div>
             <div className="col-md-4 pt-10 text-Start">
               <div className=" div-hvr">
@@ -95,5 +134,4 @@ class MobileApp extends React.Component{
 
         </>)
     }
-}
 export default MobileApp;
