@@ -7,91 +7,85 @@ import '../crouselSection/crouselSection.css'
 class CrouselSection extends React.Component{
 
   render(){
-    const settings = {
-      dots: true,
-      vertical: true,
-      autoplay: false, 
-      fade: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      cssEase: "linear",
-      //  beforeChange: function(currentSlide, nextSlide) {
-      //   console.log("before change", currentSlide, nextSlide);
-      // },
-      // afterChange: function(currentSlide) {
-      //   console.log("after change", currentSlide);
-      // }
-    };
+   
   return (<>
-       {/* <div className='' style={{marginLeft: "-25px"}}>
-<Slider {...settings}   >
-      <div>
-        <img
-      className="d-block bg-clipboard "
-      src="assets/banner1-4.jpg"
-      alt="First slide"
-      />
-      <div className="d-block"><h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p></div>
-      </div>
-      <div>
-        <img
-      className="d-block bg-clipboard "
-      src="assets/banner1-5.jpg"
-      alt="First slide"
-      />
-      <div className="d-block"><h3>second slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p></div>
-      </div>
-      <div>
-        <img
-      className="d-block bg-clipboard "
-      src="assets/banner1-6.jpg"
-      alt="First slide"
-      />
-      <div className="d-block"><h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p></div>
-      </div>
-      </Slider>
-        </div> */}
-      
-    <Carousel>
+       
+    <Carousel className="home-crousel" fade>
     
-  <Carousel.Item interval={1000}>
+  <Carousel.Item className="crousel-item">
+    <div className='background-gradient'>
     <img
-      className="d-block bg-clipboard w-100"
+      className="d-block   w-100"
       src="assets/banner1-4.jpg"
       alt="First slide"
     />
-    <div className='overlay-dark'></div>
-    <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </div>
+    <Carousel.Caption className='crousel-caption'>
+      <div className="tex-content">
+      <h1 className=" font-48 fw-1">The Ultimate</h1>
+      <h1 className=" font-48 fw-7">Creative Business</h1>
+      <h1 className=" font-48 fw-1">In Market</h1>
+     <p className=" font-18 fw-1">The Best Multipurpose Multi Page Template in Market</p></div>
+      
     </Carousel.Caption>
+    <div className="social-icons">
+      <ul className="li-inline-cs list-style-none ">
+      <li><a href="#" className="facebook p-1 "><i className="fab fa-facebook"></i> </a> </li>
+                <li><a href="#" className="twitter p-1"><i className="fab fa-twitter"></i> </a> </li>
+                <li><a href="#" className="insta p-1"><i className="fab fa-instagram"></i> </a> </li>
+                <li><a href="#" className="linkedin p-1"><i className="fab fa-linkedin"></i> </a> </li>
+              </ul>
+      </div>
   </Carousel.Item>
-  <Carousel.Item interval={500}>
+  <Carousel.Item className="crousel-item" >
+  <div className='background-gradient'>
     <img
       className="d-block w-100"
       src="assets/banner1-5.jpg"
       alt="Second slide"
     />
-    <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <Carousel.Caption className='crousel-caption'>
+    <div className="tex-content">
+      <h1 className=" font-48 fw-1">Let's Create</h1>
+      <h1 className=" font-48 fw-7">Deep Creativity</h1>
+      <h1 className=" font-48 fw-1">In Market</h1>
+     <p className=" font-18 fw-1">Responsive and Retina Ready for All Devices</p></div>
+      
     </Carousel.Caption>
+    <div className="social-icons">
+      <ul className="li-inline-cs list-style-none ">
+                <li><a href="#" className="facebook p-1 "><i className="fab fa-facebook"></i> </a> </li>
+                <li><a href="#" className="twitter p-1"><i className="fab fa-twitter"></i> </a> </li>
+                <li><a href="#" className="insta p-1"><i className="fab fa-instagram"></i> </a> </li>
+                <li><a href="#" className="linkedin p-1"><i className="fab fa-linkedin"></i> </a> </li>
+        </ul>
+    </div>
   </Carousel.Item>
-  <Carousel.Item>
+  <Carousel.Item className="crousel-item">
+  <div className='background-gradient'>
     <img
       className="d-block w-100"
       src="assets/banner1-6.jpg"
       alt="Third slide"
     />
-    <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </div>
+    <Carousel.Caption className='crousel-caption'>
+    <div className="tex-content">
+      <h1 className=" font-48 fw-1">We Make</h1>
+      <h1 className=" font-48 fw-7">Inspired Design</h1>
+      <h1 className=" font-48 fw-1">Our Trax</h1>
+     <p className=" font-18 fw-1">Is a New Design Studio founded in NewYork</p></div>
+     
     </Carousel.Caption>
+    <div className="social-icons">
+      <ul className="li-inline-cs list-style-none ">
+                <li><a href="#" className="facebook p-1 "><i className="fab fa-facebook"></i> </a> </li>
+                <li><a href="#" className="twitter p-1"><i className="fab fa-twitter"></i> </a> </li>
+                <li><a href="#" className="insta p-1"><i className="fab fa-instagram"></i> </a> </li>
+                <li><a href="#" className="linkedin p-1"><i className="fab fa-linkedin"></i> </a> </li>
+              </ul>
+      </div>
   </Carousel.Item>
 </Carousel>
   </>);

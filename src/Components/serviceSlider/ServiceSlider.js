@@ -1,10 +1,26 @@
 import React from 'react';
 import '../serviceSlider/serviceSlider.css'
-const ServiceSlider = () => {
+import Slider from "react-slick";
+
+class ServiceSlider  extends React.Component {
+  render(){
+    const settings = {
+        dots: false,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 2000,
+        cssEase: "linear"
+      };
+
   return (
       <>
       <div className="container ">
       <div className="row bodycontainer p-0-5">
+<Slider {...settings} >
+      
 
         <div className="col-md-4">
           <div className="card card-box bg-globe">
@@ -12,8 +28,8 @@ const ServiceSlider = () => {
 
             <div className="card-body  text-center ">
 
-              <h4 className="a-link"><a href="#">SEO Optimized</a></h4>
-              <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+              <h4 className="a-link"><a href="#" className="text-decoration-none font-18 ">SEO Optimized</a></h4>
+              <p className="font-15">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
 
             </div>
           </div>
@@ -24,8 +40,8 @@ const ServiceSlider = () => {
 
             <div className="card-body">
 
-              <h4 className="a-link"><a href="#">Well Documented</a></h4>
-              <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+              <h4 className="a-link"><a href="#" className="text-decoration-none font-18">Well Documented</a></h4>
+              <p className="font-15">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
 
             </div>
           </div>
@@ -36,17 +52,20 @@ const ServiceSlider = () => {
 
             <div className="card-body ">
 
-              <h4 className="a-link"><a href="#">Fully Responsive</a></h4>
-              <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+              <h4 className="a-link"><a href="#" className="text-decoration-none font-18" >Fully Responsive</a></h4>
+              <p className="font-15" className="font-15">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
 
             </div>
           </div>
         </div>
+        
 
-      </div>
+      
+    </Slider>
+    </div>
     </div>
       </>
-  );
+  );}
 };
 
 export default ServiceSlider;
