@@ -13,37 +13,30 @@
 .circle {
   border: 1px solid #fff;
   border-radius: 50%;
-  padding: 2.3rem;
+  padding: 1.8rem;
   margin-left: 30%;
+  font-size: 28px;
+  font-weight: 600;
 }
 .line-add li {
   position: relative;
 }
-.line-add li .circle::after {
-  content: " ";
-  display: block;
-  position: absolute;
-  height: 1px;
-  background: #fff;
-  width: 30%;
-  left: 100%;
-  top: 8%;
-}
 
+.line-add li:last-child .circle:after,
+.line-add li:last-child .circle::before {
+  display: none;
+}
+.line-add li .circle::after,
 .line-add li .circle::before {
   content: " ";
-  display: block;
+  /* display: block; */
   position: absolute;
   height: 1px;
   background: #fff;
-  width: 30%;
-  right: 100%;
-  top: 8%;
+  width: 60%;
+  right: -30%;
+  top: 10%;
 }
-
-/* .line-add li .circle:nth-child(1)::before {
-  content: "";
-  width: 0;
-  right: 0;
-  top: 0;
-} */
+.circle-active {
+  background: linear-gradient(90deg, #5192e1, #23ced5);
+}

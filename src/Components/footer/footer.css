@@ -2,6 +2,9 @@ footer {
   color: #fff;
   width: 100%;
 }
+.font-white {
+  color: #fff;
+}
 .bg-footr {
   background-color: #26313c;
   padding-top: 10rem;
@@ -49,8 +52,8 @@ footer {
 .li-inline-cs {
   display: flex;
 }
-.li-inline-cs a {
-  color: #26313c;
+.font-white a {
+  color: #fff;
 }
 .mar-23 {
   margin: 0 23%;
@@ -70,4 +73,21 @@ footer {
   width: 0;
   top: 1.7em;
   position: relative;
+}
+.hovered {
+  color: #24cdd5;
+}
+.latest_news li .toggle-white {
+  color: #fff;
+}
+.latest_news li .toggle-white:hover {
+  color: #24cdd5;
+}
+.navigation .links li a {
+  padding: 8px 0 0 15px;
+  width: 40%;
+}
+.navigation .links li a:hover {
+  color: #24cdd5 !important;
+  transform: translateX(10px);
 }

@@ -92,3 +92,22 @@
   display: block;
   margin-top: -10px;
 }
+.socila-icons-link a {
+  color: #fff;
+  padding: 8px;
+}
+.card .card-shape .team-content .socila-icons-link a:hover {
+  color: #fff;
+  border-radius: 50%;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+.card .card-shape .team-content .socila-icons-link .facebook:hover {
+  background-color: #4267b2;
+}
+.card .card-shape .team-content .socila-icons-link .twitter:hover {
+  background-color: #00acee;
+}
+.card .card-shape .team-content .socila-icons-link .insta:hover {
+  background-color: #dc3545;
+}

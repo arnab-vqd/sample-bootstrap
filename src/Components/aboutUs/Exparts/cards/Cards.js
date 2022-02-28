@@ -13,7 +13,7 @@ function Cards(props) {
                     return(
                       
           <div className="col-md-3 text-center ">
-                    <div className="card " key={index}>
+                <div className="card " key={index}>
                 <a href="#"><img className="card-img-top"  src={thro.img}
                     alt="Card image cap"/></a>
                 <div className="card-body card-shape">
@@ -21,11 +21,11 @@ function Cards(props) {
                   <div className="team-content">
                     <h4 className="darkcolor">{thro.name}</h4>
                     <p className='team-details'>{thro.details}</p>
-                      <p className="social-icons-simple socila-icons-link  ">
-                      <a className="facebook" href="/"><i className="fab fa-facebook-square"></i> </a>
-                      <a className="twitter" href="/"><i className="fab fa-twitter"></i> </a>                 
-                      <a lassName="insta" href="/"><i className="fab fa-instagram"></i> </a>             
-                      </p>
+                    <p className="social-icons-simple socila-icons-link  ">
+                     <a className="facebook" href="/"><i className="fab fa-facebook-f "></i> </a>
+                     <a className="twitter" href="/"><i className="fab fa-twitter"></i> </a>                 
+                     <a className="insta" href="/"><i className="fab fa-instagram"></i> </a>             
+                    </p>
                   </div>
                  
                 </div>
