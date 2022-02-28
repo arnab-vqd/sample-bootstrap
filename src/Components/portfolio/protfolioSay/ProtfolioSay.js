@@ -30,7 +30,7 @@ render(){
         {/* <div className="col-md-6 "> */}
 
         <Carousel className="d-r" fade>
-          <Carousel.Item>
+          <Carousel.Item className="pf-say-itms">
             <div className="row p-0-5">
               <div className="col-md-6">  <div className="img-container"><img  src={this.state.data[0].img} className="img-wdt" alt='...'/></div>
                 <h4 className="blue-clr font-14 ml-2 ">
@@ -50,7 +50,7 @@ render(){
               </div>
             </div>
           </Carousel.Item>
-          <Carousel.Item>
+          <Carousel.Item className="pf-say-itms">
           <div className="row p-0-5">
               <div className="col-md-6"> <div className="img-container"> <img  src={this.state.data[1].img} className="img-wdt" alt='...'/></div>
                 <h4 className="blue-clr font-14 ml-2 ">
@@ -70,7 +70,7 @@ render(){
               </div>
             </div>
           </Carousel.Item>
-          <Carousel.Item>
+          <Carousel.Item className="pf-say-itms">
           <div className="row p-0-5">
               <div className="col-md-6"> 
               <div className="img-container"><img  src={this.state.data[2].img} className="img-wdt" alt='...'/></div>
@@ -91,7 +91,7 @@ render(){
               </div>
             </div>
           </Carousel.Item>
-          <Carousel.Item>
+          <Carousel.Item className="pf-say-itms">
           <div className="row p-0-5">
               <div className="col-md-6"> <div className="img-container"> <img  src={this.state.data[3].img} className="img-wdt" alt='...'/></div>
                 <h4 className="blue-clr font-14 ml-2 ">

@@ -16,6 +16,14 @@ const Footer = () => {
                     +01 - 123 - 4567 <Nav.Link  className="d-block p-0 text-white" href="#">web@support.com</Nav.Link >
                 </p>
                 </div>
+                <ul className="li-inline-cs list-style-none text-white ">
+                <li><a href="#" className="facebook p-1 "><i className="fab fa-facebook"></i> </a> </li>
+                <li><a href="#" className="twitter p-1"><i className="fab fa-twitter"></i> </a> </li>
+                <li><a href="#" className="linkedin p-1"><i className="fab fa-linkedin"></i> </a> </li>
+                <li><a href="#" className="insta p-1"><i className="fab fa-instagram"></i> </a> </li>
+                <li><a href="#" className="whatsapp p-1"><i className="fab fa-whatsapp"></i> </a> </li>
+                <li><a href="#" className="envelop p-1"><i className="fa fa-envelope"></i> </a> </li>
+              </ul>
             </div>
             <div className="col-lg-3 col-md-6 col-sm-6">
                 <div>

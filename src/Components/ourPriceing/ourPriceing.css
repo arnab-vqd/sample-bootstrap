@@ -112,8 +112,21 @@
 .pricing-item.active {
   background: #26313c;
 }
-.pricing-item.active {
+.pricing-item.active,
+.pricing-item.active .pricing-list li span,
+.pricing-item.active .pricing-list li i,
+.pricing-item.active .card-items .font-light,
+.pricing-item.active .card-items .small-text {
   color: #fff;
+}
+.pricing-item.active .btn-blue {
+  border-color: #fff;
+  background: #26313c;
+  transition: 0.2s all;
+}
+.pricing-item.active .btn-blue:hover {
+  background: #fff;
+  color: #384141;
 }
 /* .pricing-list li::before,
 .price-included::before {

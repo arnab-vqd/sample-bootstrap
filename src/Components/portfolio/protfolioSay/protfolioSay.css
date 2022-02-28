@@ -5,22 +5,22 @@
   background-attachment: fixed;
   background-position: center;
 }
-.carousel-control-prev {
+.d-r .carousel-control-prev {
   transform: translate(-24px, 180px);
   height: 20px;
 }
-.carousel-control-prev-icon {
+.d-r .carousel-control-prev-icon {
   background-color: red;
 }
-.carousel-control-next {
+.d-r .carousel-control-next {
   transform: translate(-900px, 180px);
   height: 20px;
 }
-.carousel-control-next-icon {
+.d-r .carousel-control-next-icon {
   background-color: red;
 }
-.carousel-control-prev-icon:hover,
-.carousel-control-next-icon:hover {
+.d-r.carousel-control-prev-icon:hover,
+.d-r.carousel-control-next-icon:hover {
   background-image: linear-gradient(
     to right,
     #5192e1 0%,
@@ -53,9 +53,9 @@
 .img-wdt:hover {
   transform: scale(1.2);
 }
-.carousel-indicators {
+.d-r .carousel-indicators {
   display: none;
 }
-.carousel-indicators {
+.d-r .carousel-indicators {
   transform: translate(0, 200px);
 }

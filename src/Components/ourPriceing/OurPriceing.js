@@ -1,35 +1,13 @@
-import React from "react";
+import React,{useState} from "react";
 import '../ourPriceing/ourPriceing.css'
  const OurPriceing=()=>{
-
-  //     const e = document.getElementById("filt-monthly");
-  //     const d = document.getElementById("filt-hourly");
-  //     const t = document.getElementById("switcher");
-  //     const m = document.getElementById("monthly");
-  //     const y = document.getElementById("hourly");
-
-  // e.addEventListener("click", ()=>{
-  //   t.checked = false;
-  //   e.classList.add("toggler--is-active");
-  //   d.classList.remove("toggler--is-active");
-  //   m.classList.remove("hide");
-  //   y.classList.add("hide");
-  // });
-
-  // d.addEventListener("click", ()=>{
-  //   t.checked = true;
-  //   d.classList.add("toggler--is-active");
-  //   e.classList.remove("toggler--is-active");
-  //   m.classList.add("hide");
-  //   y.classList.remove("hide");
-  // });
-
-  // t.addEventListener("click", ()=>{
-  //   d.classList.toggle("toggler--is-active");
-  //   e.classList.toggle("toggler--is-active");
-  //   m.classList.toggle("hide");
-  //   y.classList.toggle("hide");
-  // })
+  const [switchToggle, setSwitchToggle]=useState(false);
+  const [activeHover, setActiveHover]=useState(false);
+  const toggleSwitch=()=>{
+    switchToggle?setSwitchToggle(false): setSwitchToggle(true);
+    console.log(switchToggle);
+  }
+ 
   return(
             <div className="bg-gray">
     <div className="container  pt-10">
@@ -47,24 +25,28 @@ import '../ourPriceing/ourPriceing.css'
         <div className="col-md-4"></div>
         <div className="col-md-4">
         
-            <div class="price-toggle-wrapper heading_space">
-              <span class="Pricing-toggle-button month active">Monthly</span>
-              <span class="Pricing-toggle-button year">Yearly</span>
+            <div class="price-toggle-wrapper heading_space" onClick={toggleSwitch}>
+              <span className={switchToggle?"Pricing-toggle-button month active":"Pricing-toggle-button month "}>Monthly</span>
+              <span className={switchToggle?"Pricing-toggle-button year":"Pricing-toggle-button year  active "}>Yearly</span>
             </div>
 
         </div>
         <div className="col-md-4"></div>
       </div>
       <div className="row">
-        <div class="col-lg-4 col-md-12 mb-4">
-            <div class="card h-100 pricing-item shadow-lg">
+        <div class="col-lg-4 col-md-12 mb-4" onMouseEnter={e=>setActiveHover(true)} onMouseLeave={e=>setActiveHover(false)}>
+            <div className={activeHover?"card h-100 pricing-item shadow-lg active":"card h-100 pricing-item shadow-lg "}>
               <div class="card-body">
-                <div class="text-center p-3">
+                <div class="text-center p-3  card-items">
                   <h5 class="card-title darkcolor font-light font-24">Basic</h5>
                   <small className="small-text ">The standard version</small>
                   <br/><br/>
                   <div className="bdr-xy">
-                  <span className="font-48">$9.95</span>/month
+                    {switchToggle?
+                  (<><span className="font-48">$9.95</span><span>/month</span></>)
+                  :
+                  (<><span className="font-48">$89.55</span><span>/year</span></>)
+                  }
                   </div>
                   <br/><br/>
                   <ul class="pricing-list list-style-none">
@@ -83,15 +65,19 @@ import '../ourPriceing/ourPriceing.css'
               </div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-12 mb-4">
-            <div class="card h-100 pricing-item shadow-lg active">
+        <div class="col-lg-4 col-md-12 mb-4"  onMouseEnter={e=>setActiveHover(false)} onMouseLeave={e=>setActiveHover(true)}>
+            <div className={activeHover?"card h-100 pricing-item shadow-lg  ":"card h-100 pricing-item shadow-lg  active"}>
               <div class="card-body">
-                <div class="text-center p-3">
-                  <h5 class="card-title darkcolor font-light font-24">Basic</h5>
+                <div class="text-center p-3  card-items">
+                  <h5 class="card-title darkcolor font-light font-24">Popular</h5>
                   <small className="small-text ">The standard version</small>
                   <br/><br/>
                   <div className="bdr-xy">
-                  <span className="font-48">$19.95</span>/month
+                  {switchToggle?
+                  (<><span className="font-48">$19.95</span><span>/month</span></>)
+                  :
+                  (<><span className="font-48">$179.55</span><span>/year</span></>)
+                  }
                   </div>
                   <br/><br/>
                   <ul class="pricing-list list-style-none">
@@ -110,15 +96,20 @@ import '../ourPriceing/ourPriceing.css'
               </div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-12 mb-4">
-            <div class="card h-100 pricing-item shadow-lg ">
+        <div class="col-lg-4 col-md-12 mb-4"  onMouseEnter={e=>setActiveHover(true)} onMouseLeave={e=>setActiveHover(false)}>
+            <div className={activeHover?"card h-100 pricing-item shadow-lg active":"card h-100 pricing-item shadow-lg "}>
               <div class="card-body">
-                <div class="text-center p-3">
-                  <h5 class="card-title darkcolor font-light font-24">Basic</h5>
+                <div class="text-center p-3 card-items">
+                  <h5 class="card-title darkcolor font-light font-24">Enterprise</h5>
                   <small className="small-text ">The standard version</small>
                   <br/><br/>
                   <div className="bdr-xy">
-                  <span className="font-48">$29.95</span>/month
+                  { switchToggle?(<>
+                  <span className="font-48">$29.95</span> 
+                  <span>/month</span></>)
+                  :(<><span className="font-48">$269.55</span>
+                  <span>/year</span></>)
+                }
                   </div>
                   <br/><br/>
                   <ul class="pricing-list list-style-none">
