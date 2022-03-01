@@ -72,9 +72,12 @@ const Header = () => {
                     </Offcanvas.Body>
                     <div className="side-footer w-100">
                 <Nav className="social-icons link-wrapper white icn-alin top40">
-                    <Nav.Link to="/" className="facebook"><i className="fab fa-facebook-f"></i> </Nav.Link> 
-                    <Nav.Link to="/" className="twitter"><i className="fab fa-twitter"></i> </Nav.Link> 
-                    <Nav.Link to="/" className="insta"><i className="fab fa-instagram"></i> </Nav.Link> 
+                    <ul className="li-inline-cs list-style-none font-white ">
+                        <li><Nav.Link to="/" className="facebook  "><i className="fab fa-facebook"></i> </Nav.Link> </li>
+                        <li><Nav.Link to="/" className="twitter "><i className="fab fa-twitter"></i> </Nav.Link> </li>
+                        <li><Nav.Link to="/" className="linkedin "><i className="fab fa-linkedin"></i> </Nav.Link> </li>
+                        <li><Nav.Link to="/" className="insta "><i className="fab fa-instagram"></i> </Nav.Link> </li>
+                    </ul>
                 </Nav>
                 <p className="whitecolor">&copy; <span id="year">2019-2022</span> Trax. Made With Love by ThemesIndustry</p>
             </div>

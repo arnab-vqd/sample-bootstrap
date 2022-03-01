@@ -61,7 +61,7 @@
   height: 5%; 
 } */
 .home-crousel .crousel-item .social-icons .li-inline-cs {
-  transform: translate(90%, -450%);
+  transform: translate(97%, -350%);
   flex-direction: column;
 }
 .home-crousel .crousel-item .social-icons .li-inline-cs a i {

@@ -165,8 +165,8 @@ render(){
                 <p className="bottom10"><a href="mailto:polpo@traxagency.co.au">polpo@traxagency.com</a></p>
                 <p className="bottom10">Mon-Fri: 9am-5pm</p>
               </div>
-              <ul className="li-inline-cs list-style-none  ">
-                <li><a href="#" className="facebook p-1 "><i className="fab fa-facebook"></i> </a> </li>
+              <ul className="li-inline-cs list-style-none contact-ul ">
+                <li><a href="#" className="facebook p-1 "><i className="fab fa-facebook-f"></i> </a> </li>
                 <li><a href="#" className="twitter p-1"><i className="fab fa-twitter"></i> </a> </li>
                 <li><a href="#" className="linkedin p-1"><i className="fab fa-linkedin"></i> </a> </li>
                 <li><a href="#" className="insta p-1"><i className="fab fa-instagram"></i> </a> </li>
