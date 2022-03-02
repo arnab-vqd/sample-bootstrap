@@ -9,7 +9,7 @@ import '../ourPriceing/ourPriceing.css'
   }
  
   return(
-            <div className="bg-gray">
+            <div className="bg-gray" id="ourPriceing">
     <div className="container  pt-10">
       <div className="row">
         <div className="col-md-12 text-center">

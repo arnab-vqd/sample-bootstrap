@@ -1,5 +1,6 @@
 import React ,{useEffect} from 'react';
 import { Navbar, Nav, Container, NavLink, Offcanvas } from "react-bootstrap";
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import '../header/header.css'
 
 const Header = () => {
@@ -27,24 +28,24 @@ const Header = () => {
                 <div className="">
                 <ul className="navbar-flex link-color mx-auto ms-xl-auto me-xl-0" >
                     <li className="nav-item">
-                    <NavLink to="/" activeClassName="active">
+                    <Link to="mainSection" spy={true} smooth={true} offset={50} duration={500} >
                         Home
-                    </NavLink>
+                    </Link>
+                    </li>
+                    <li  className="nav-item">
+                    <Link to="about" spy={true} smooth={true} offset={60} duration={500} >About</Link >
                     </li>
                     <li className="nav-item">
-                    <Nav.Link to="/">About</Nav.Link>
+                    <Link to="ourPriceing" spy={true} smooth={true} offset={50} duration={500} >Our Pricing</Link >
                     </li>
                     <li className="nav-item">
-                    <Nav.Link to="/">Our Pricing</Nav.Link>
+                    <Link to="protfolio" spy={true} smooth={true} offset={50} duration={500} >Portfolio</Link >
                     </li>
                     <li className="nav-item">
-                    <Nav.Link to="/">Portfolio</Nav.Link>
+                    <Link to="blog" spy={true} smooth={true} offset={50} duration={500} >Our Blog</Link >
                     </li>
                     <li className="nav-item">
-                    <Nav.Link to="/">Our Blog</Nav.Link>
-                    </li>
-                    <li className="nav-item">
-                    <Nav.Link to="/">Contact Us</Nav.Link>
+                    <Link to="contactus" spy={true} smooth={true} offset={50} duration={500} >Contact Us</Link >
                     </li>
                 </ul>
             </div>  
@@ -62,12 +63,12 @@ const Header = () => {
                     </Offcanvas.Header>
                     <Offcanvas.Body className=' p-4'>
                         <Nav className="justify-content-end link-wrapper  text-white-clr flex-grow-1 pe-3">
-                            <Nav.Link className='link active' to="/">Home</Nav.Link>
-                            <Nav.Link className='link' to="/signup">About</Nav.Link>
-                            <Nav.Link className='link' to="/">Our Pricing</Nav.Link>
-                            <Nav.Link className='link' to="/">Our Blog</Nav.Link>
-                            <Nav.Link className='link' to="/">Contact Us</Nav.Link>
-                            <Nav.Link className='link' to="/">Portfolio</Nav.Link>                          
+                            <Link className='link ' to="/" >Home</Link >
+                            <Link className='link' to="/signup">About</Link >
+                            <Link className='link' to="/">Our Pricing</Link >
+                            <Link className='link' to="/">Portfolio</Link >                          
+                            <Link className='link' to="/">Our Blog</Link >
+                            <Link className='link' to="contactus">Contact Us</Link >
                         </Nav>
                     </Offcanvas.Body>
                     <div className="side-footer w-100">

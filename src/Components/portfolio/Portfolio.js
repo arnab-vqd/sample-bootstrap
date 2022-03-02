@@ -5,11 +5,11 @@ import ProtfolioSay from './protfolioSay/ProtfolioSay';
 class Protfolio extends React.Component{
  render(){
      return(
-         <>
+         <div id='protfolio'>
         <ProtfolioGalary/>
          <ProtfolioSay/>
          <PartnerCrousel/>
-         </>
+         </div>
      )
  }
 }

@@ -5,13 +5,13 @@ import Exparts from './Exparts/Exparts';
 import MobileApp from './mobileApp/MobileApp';
 import WorkOnProgress from './workOnProgress/WorkOnProgress';
 const AboutUs = () => {
-  return(<>
+  return(<div id="about">
   <BusinessNextLevel/>
   <WorkOnProgress/>
   <MobileApp/>
   <CounterSection/>
   <Exparts/>
-  </>);
+  </div>);
 };
 
 export default AboutUs;

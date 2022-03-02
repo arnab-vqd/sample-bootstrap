@@ -5,7 +5,7 @@ import { Nav } from "react-bootstrap";
 class LetestBlog extends React.Component{
 render( ){
     return(<>
-        <section id="blog" className=" bg-blog  pad-xy" id="blog">
+        <section className=" bg-blog  pad-xy" id="blog">
     <div className="container">
       <div className="row">
         <div className="col-md-12 text-center">
