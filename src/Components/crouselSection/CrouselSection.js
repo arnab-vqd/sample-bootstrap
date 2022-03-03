@@ -10,7 +10,7 @@ class CrouselSection extends React.Component{
    
   return (<>
        
-    <Carousel className="home-crousel" fade>
+    <Carousel className="home-crousel" id="mainSection" fade>
     
   <Carousel.Item className="crousel-item">
     <div className='background-gradient'>
