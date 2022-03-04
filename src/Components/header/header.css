@@ -16,10 +16,11 @@
   margin: 0;
 }
 .link-color .nav-item {
-  color: #26313c;
+  color: #fff;
   padding: 0 20px;
   cursor: pointer;
 }
+.is-sticky .nav-item .active,
 .nav-item .active {
   color: #24cdd5 !important;
   border-bottom: 2px #23cdd5 solid;
@@ -49,7 +50,6 @@
   position: relative;
   text-decoration: none;
   padding: 10px 0;
-  color: #fff;
 }
 .link-wrapper {
   position: relative;
@@ -99,6 +99,9 @@
 .icn-alin a {
   padding-left: 5px !important;
 }
+.color-white {
+  background-color: #fff;
+}
 
 .is-sticky {
   position: fixed;
@@ -111,4 +114,10 @@
   animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
   padding-top: 0px;
   padding-bottom: 0px;
+}
+.is-sticky .link-color .nav-item {
+  color: #26313c;
+}
+.is-sticky .color-white {
+  background-color: transparent;
 }

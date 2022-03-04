@@ -2,7 +2,7 @@
   background-color: #fff;
   padding: 3%;
 }
-.bodycontainer {
+.stayconnect .staybodycontainer {
   width: 100%;
   height: 0vh;
   transform: translate(0, -80px);
