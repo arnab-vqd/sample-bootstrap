@@ -1,9 +1,26 @@
 import React, { useState, useCallback } from "react";
+import { NavLink } from "react-bootstrap";
 import Gallery from "react-photo-gallery";
 // import Carousel, { Modal, ModalGateway } from "react-images";
 import '../protfolioGalary/protfolioGalary.css'
 import {photos} from './photos.js';
 const ProtfolioGalary = () => {
+  const [items,setItems]=useState(photos)
+  const [visible, SetVisible]=useState(6)
+const filterItems=(cateItem)=>{
+  const updatedItems= photos.filter((curntElem)=>{
+  console.log(curntElem.category);
+  console.log("cateItem",cateItem);
+
+    return curntElem.category===cateItem;
+});
+  console.log(updatedItems);
+  setItems(updatedItems);
+}
+
+const loadMore=()=>{
+  SetVisible((prevalue)=>prevalue+3);
+}
   // const [currentImage, setCurrentImage] = useState(0);
   // const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
@@ -21,7 +38,7 @@ const ProtfolioGalary = () => {
       <div class="row pad-xy">
         
         <div className="col-md-12 text-center ">
-          <div>
+          <div className="text-center ">
             <span className="blue-clr font-18"> Let's Explore Out </span>
             <h2 className="font-48 text-black1 fw-4"> Our Portfolio </h2>
             <p className="font-14 mxy-1 gry-clr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolores omnis provident quam reiciendis voluptatum.</p>
@@ -31,75 +48,46 @@ const ProtfolioGalary = () => {
           <div class="d-flex justify-content-center">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item active" aria-current="page">All</li>
-              <li class="breadcrumb-item"><a href="#">Digital</a></li>
-              <li class="breadcrumb-item"><a href="#">Design</a></li>
-              <li class="breadcrumb-item"><a href="#">Brand</a></li>
-              <li class="breadcrumb-item"><a href="#">Graphics</a></li>
+              <li class="breadcrumb-item active" aria-current="page"><NavLink to="/" onClick={()=>setItems(photos)}>All</NavLink></li>
+              <li class="breadcrumb-item"><NavLink to="/" onClick={()=>filterItems('Digital')}>Digital</NavLink></li>
+              <li class="breadcrumb-item"><NavLink to="/" onClick={()=>filterItems('Brand')}>Design</NavLink></li>
+              <li class="breadcrumb-item"><NavLink to="/" onClick={()=>filterItems('Brand')}>Brand</NavLink></li>
+              <li class="breadcrumb-item"><NavLink to="/" onClick={()=>filterItems('Graphics')}>Graphics</NavLink></li>
             </ol>
           </nav>
   
           </div>
-          <Gallery photos={photos} direction={"column"} /> 
+          {/* <Gallery photos={photos} direction={"column"} />  */}
 
 
 
           {/* <!-- Gallery --> */}
 <div class="row">
-  <div class="col-lg-4 col-md-12  p-0 team-area">
-  <div class="single-team">
-    <img
-      src="assets/gallery-5.jpg"
-      class="w-100 shadow-1-strong rounded "
-      alt="Boat on Calm Water"
-    />
-     <div class="team-text">
-        <h2>abcdefg ahhahh</h2>
-        <p> Development</p>
-        <p>
-          <a href="">i<i class="fa fa-facebok"></i></a>
-          <a href="">j<i class="fa fa-facebok"></i></a>
-          <a href="">k<i class="fa fa-facebok"></i></a>
-          <a href="">l<i class="fa fa-facebok"></i></a>
+  {
+    items.slice(0,visible).map((elems)=>{
+      return(
+        <div className="col-lg-4 col-md-12  p-0 team-area">
+        <div className="single-team">
+          <img src={elems.src}
+            className="w-100 shadow-1-strong rounded "
+            alt="Boat on Calm Water"
+          />
+           <div className="team-text">
+             <div className="list-icons">
+                <a href=" " className="protfolio-icons"><i className="fa fa-search-plus"></i></a>
+                <a href=""className="protfolio-icons"><i className="fas fa-link"></i></a>
+              </div>
+                <h4 className="font-18 w-100">{elems.name}</h4>
+            </div>
+        </div>
+        </div>
 
-        </p>
-      </div>
-  </div>
-    <img
-      src="assets/gallery-8.jpg"
-      class="w-100 shadow-1-strong rounded "
-      alt="Wintry Mountain Landscape"
-    />
-  </div>
-
-  <div class="col-lg-4 p-0">
-    <img
-      src="assets/gallery-7.jpg"
-      class="w-100 shadow-1-strong rounded "
-      alt="Mountains in the Clouds"
-    />
-
-    <img
-      src="assets/gallery-6.jpg"
-      class="w-100 shadow-1-strong rounded "
-      alt="Boat on Calm Water"
-    />
-  </div>
-
-  <div class="col-lg-4 p-0 ">
-    <img
-      src="assets/gallery-11.jpg"
-      class="w-100 shadow-1-strong rounded "
-      alt="Waves at Sea"
-    />
-
-    <img
-      src="assets/gallery-9.jpg"
-      class="w-100 shadow-1-strong rounded "
-      alt="Yosemite National Park"
-    />
-  </div>
+      )
+     })
+  }  
 </div>
+<button className="button btngrident btn btn-primary pad-xy" onClick={loadMore}> Load More</button>
+
 {/* <!-- Gallery --> */}
           
           {/* <ModalGateway>

@@ -25,7 +25,10 @@
   display: block;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, #000, transparent);
+  background: radial-gradient(
+    rgba(35, 206, 213, 0.9),
+    rgba(81, 146, 225, 0.9) 50%
+  );
   z-index: 2;
   transition: 0.5s;
   opacity: 0;
@@ -43,6 +46,32 @@
   z-index: 3;
   color: #fff;
   opacity: 0;
-  transform: translateY(60px);
+  transform: translateY(-60px);
   transition: 0.5s;
+  padding: 0 0 35% 35%;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  margin: 8px 0;
+}
+.breadcrumb-item {
+  line-height: 0.3rem;
+}
+.protfolio-icons {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 18px;
+  border: 1px solid #fff;
+  box-shadow: 0 0 5px 0 rgb(0 0 0 / 10%);
+  border-radius: 50%;
+  background: #fff;
+  color: #26313c;
+  margin-bottom: 15px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
 }

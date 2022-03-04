@@ -69,11 +69,11 @@ handelSubmit=(e)=>{
         return(
             <div>
                 <section id="stayconnect">
-    <div className="container position-relative mart-1">
+    <div className="container stayconnect position-relative mart-1">
         <div className="row">
             <div className="col-md-1"></div>
             <div className="col-md-10">
-            <div className="bodycontainer">
+            <div className="staybodycontainer">
         <div className="row bodycontainerbg">
           <div className="col-md-12 col-sm-12">
 

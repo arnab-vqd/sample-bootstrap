@@ -1,26 +1,31 @@
-import React ,{useEffect} from 'react';
+import React ,{useEffect,useState} from 'react';
 import { Navbar, Nav, Container, NavLink, Offcanvas } from "react-bootstrap";
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import '../header/header.css'
 
 const Header = () => {
+    const [istoggle,settoggle]=useState(false);
 
     useEffect(() => {
         window.addEventListener('scroll', isSticky);
         return () => {
-            window.removeEventListener('scroll', isSticky);
+            window.removeEventListener('scroll', isSticky)
         };
+            
     });
     const isSticky = (e) => {
         const header = document.querySelector('.header-section');
         const scrollTop = window.scrollY;
-        scrollTop >= 250 ? header.classList.add('is-sticky') : header.classList.remove('is-sticky');
+        scrollTop >= 250 ? header.classList.add('is-sticky')   : header.classList.remove('is-sticky');
+        istoggle=true;
+
     };
   return (<div>
-     <Navbar   className='header-section' expand={false}>
+      
+     <Navbar   className='header-section' scrolling dark expand="md" fixed="top" expand={false}>
             <Container >
                 <Navbar.Brand to="/">
-                    {isSticky? <img src="/assets/logo.png" alt='logo1'className="logo-scrolled"/>:<img src="/assets/logo-transparent.png" alt="logo" className="logo-default"/>}
+                    {!istoggle? <img src="/assets/logo.png" alt='logo1'className="logo-scrolled"/>:<img src="/assets/logo-transparent.png" alt="logo" className="logo-default"/>}
                 {/* <img src="../assets/images/logo-transparent.png" alt="logo" className="logo-default"/> */}
                 {/* <img src="/assets/logo.png" alt='logo1'className="logo-scrolled"/> */}
                 </Navbar.Brand>
@@ -51,7 +56,7 @@ const Header = () => {
             </div>  
                 
             </Container >
-            <Navbar.Toggle aria-controls="offcanvasNavbar" />
+            <Navbar.Toggle aria-controls="offcanvasNavbar" className="color-white" />
             <Navbar.Offcanvas
                     id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel"
